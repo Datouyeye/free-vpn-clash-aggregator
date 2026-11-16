@@ -20,6 +20,21 @@ https://raw.githubusercontent.com/OWNER/free-vpn-clash-aggregator/main/output/cl
 
 `output/source-status.json` 可查看每个上游最近一次抓取结果和各源入选节点数。
 
+### 中国大陆网络：raw 域名被阻断时的替代地址
+
+`raw.githubusercontent.com` 在国内常因 SNI 阻断而 TLS 握手失败（客户端报 `os error 10054` / `tls handshake eof`），这不是配置错误。实测可用的替代地址（2026-11 验证，均返回完整 500 节点）：
+
+```text
+# 优先级从上到下；把 OWNER 换成你的用户名
+https://gh-proxy.com/https://raw.githubusercontent.com/OWNER/free-vpn-clash-aggregator/main/output/clash.yaml
+https://ghproxy.net/https://raw.githubusercontent.com/OWNER/free-vpn-clash-aggregator/main/output/clash.yaml
+https://gcore.jsdelivr.net/gh/OWNER/free-vpn-clash-aggregator@main/output/clash.yaml
+```
+
+注意 `cdn.jsdelivr.net` 在国内同样不通，要用 `gcore` / `fastly` 子域。jsDelivr 走 CDN 缓存，最新性会滞后数小时，适合导入成功即可、不追求实时节点；`gh-proxy.com` 是实时透传，能跟上 15 分钟一次的更新。
+
+前两个是第三方公共代理，只透传公开内容，不涉及你的凭据；但它们本身也可能随时失效，失效时换下一个即可。
+
 ## 第一次使用前必须做
 
 1. 打开仓库的 **Actions** 标签页，点击 *I understand my workflows, go ahead and enable them*（新建仓库的 workflow 默认是关闭的）
