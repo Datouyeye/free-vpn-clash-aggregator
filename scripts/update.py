@@ -17,6 +17,12 @@ STATUS = ROOT / "output" / "source-status.json"
 
 MAX_NODES = int(os.getenv("MAX_NODES", "500"))
 FETCH_TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
+
+# 国内直连 raw.githubusercontent.com 会被 RST 掐断 TLS。设了镜像前缀后，
+# 直连失败会自动用 "<前缀><原始URL>" 重试。置空（MIRROR_PREFIX=）可关闭。
+_MIRROR = os.getenv("MIRROR_PREFIX", "https://gh-proxy.com/").strip().strip("/")
+MIRROR_PREFIX = f"{_MIRROR}/" if _MIRROR else ""
+
 TEST_INTERVAL = int(os.getenv("TEST_INTERVAL", "300"))
 
 TEST_URL = "http://www.gstatic.com/generate_204"
@@ -26,7 +32,7 @@ TEST_URL = "http://www.gstatic.com/generate_204"
 QUIC_TYPES = {"hysteria2"}
 
 
-def fetch(url: str) -> dict:
+def _fetch_once(url: str) -> dict:
     request = urllib.request.Request(url, headers={"User-Agent": "free-vpn-clash-aggregator/1.0"})
     with urllib.request.urlopen(request, timeout=FETCH_TIMEOUT) as response:
         body = response.read()
@@ -34,6 +40,19 @@ def fetch(url: str) -> dict:
     if not isinstance(parsed, dict):
         raise ValueError("top-level YAML value is not a mapping")
     return parsed
+
+
+def fetch(url: str) -> dict:
+    """先直连，失败再走镜像前缀重试；两者都失败时抛出直连的原始异常。"""
+    try:
+        return _fetch_once(url)
+    except Exception as direct_error:
+        if not MIRROR_PREFIX or url.startswith(MIRROR_PREFIX):
+            raise
+        try:
+            return _fetch_once(MIRROR_PREFIX + url)
+        except Exception:
+            raise direct_error
 
 
 def fingerprint(proxy: dict) -> tuple:

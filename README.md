@@ -56,8 +56,9 @@ python -m venv .venv
 | `MAX_NODES` | 500 | 输出节点上限。不建议关掉，配置过大影响 Clash Verge 启动和测速 |
 | `FETCH_TIMEOUT` | 20 | 单个上游抓取超时（秒） |
 | `TEST_INTERVAL` | 300 | `AUTO` / `AUTO-HY2` 组的 url-test 间隔（秒） |
+| `MIRROR_PREFIX` | `https://gh-proxy.com/` | 直连上游失败时的镜像前缀，会自动用「前缀 + 原始 URL」重试；置空（`MIRROR_PREFIX=`）可关闭 |
 
-注意：本地运行需要能访问 `raw.githubusercontent.com`。国内直连会因 SSL 被阻断而全部抓取失败（脚本会报 `all upstream sources failed`），此时请挂代理或直接依赖 GitHub Actions 生成。
+因为带镜像回退，本地在国内网络下也能直接跑出完整配置（直连失败会自动改走镜像）。置空 `MIRROR_PREFIX` 则在 raw 域名被阻断的环境下会报 `all upstream sources failed`，此时只能依赖 GitHub Actions 生成。
 
 ## 代理分组
 
