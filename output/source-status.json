@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T05:11:13.620639+00:00",
+  "generated_at": "2026-11-17T14:22:51.271452+00:00",
   "proxy_count": 500,
   "max_nodes": 500,
   "mode": "interleave",
@@ -7,14 +7,14 @@
   "kept_per_source": {
     "PuddinCat/BestClash": 16,
     "Au1rxx/free-vpn-subscriptions": 560,
-    "awesome-vpn/awesome-vpn": 9,
+    "awesome-vpn/awesome-vpn": 20,
     "vxiaov/free_proxies": 28,
-    "ermaozi/get_subscribe": 412,
-    "anaer/Sub": 2051,
-    "ermaozi01/free_clash_vpn": 6,
+    "ermaozi/get_subscribe": 312,
+    "anaer/Sub": 2053,
+    "ermaozi01/free_clash_vpn": 19,
     "peasoft/NoMoreWalls": 0,
     "NiceVPN123/NiceVPN": 3129,
-    "chengaopan/AutoMergePublicNodes": 6
+    "chengaopan/AutoMergePublicNodes": 5
   },
   "sources": [
     {
@@ -35,8 +35,8 @@
       "name": "awesome-vpn/awesome-vpn",
       "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml",
       "ok": true,
-      "received": 23,
-      "kept": 9
+      "received": 41,
+      "kept": 20
     },
     {
       "name": "vxiaov/free_proxies",
@@ -49,28 +49,28 @@
       "name": "ermaozi/get_subscribe",
       "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
       "ok": true,
-      "received": 463,
-      "kept": 412
+      "received": 357,
+      "kept": 312
     },
     {
       "name": "anaer/Sub",
       "url": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
       "ok": true,
       "received": 2167,
-      "kept": 2051
+      "kept": 2053
     },
     {
       "name": "ermaozi01/free_clash_vpn",
       "url": "https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml",
       "ok": true,
-      "received": 24,
-      "kept": 6
+      "received": 30,
+      "kept": 19
     },
     {
       "name": "peasoft/NoMoreWalls",
       "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
       "ok": true,
-      "received": 121,
+      "received": 123,
       "kept": 0
     },
     {
@@ -85,7 +85,7 @@
       "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
       "ok": true,
       "received": 124,
-      "kept": 6
+      "kept": 5
     }
   ]
 }
