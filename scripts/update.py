@@ -17,7 +17,13 @@ STATUS = ROOT / "output" / "source-status.json"
 
 MAX_NODES = int(os.getenv("MAX_NODES", "500"))
 FETCH_TIMEOUT = int(os.getenv("FETCH_TIMEOUT", "20"))
-TEST_INTERVAL = int(os.getenv("TEST_INTERVAL", "600"))
+TEST_INTERVAL = int(os.getenv("TEST_INTERVAL", "300"))
+
+TEST_URL = "http://www.gstatic.com/generate_204"
+
+# 走 QUIC 的协议：带宽和抗丢包通常明显好于 vmess/ss，但延迟数字不占优，
+# 放在统一的 url-test 里会被低延迟的 vmess 长期压制，永远选不到。
+QUIC_TYPES = {"hysteria2"}
 
 
 def fetch(url: str) -> dict:
@@ -101,24 +107,49 @@ def unique_names(proxies: list[dict]) -> list[str]:
     return [proxy["name"] for proxy in proxies]
 
 
+def split_by_protocol(proxies: list[dict], names: list[str]) -> tuple[list[str], list[str]]:
+    """按协议把节点名分成 QUIC 组和普通组。"""
+    quic: list[str] = []
+    normal: list[str] = []
+    for proxy, name in zip(proxies, names):
+        (quic if proxy.get("type") in QUIC_TYPES else normal).append(name)
+    return quic, normal
+
+
 def build(proxies: list[dict], names: list[str]) -> dict:
+    quic, normal = split_by_protocol(proxies, names)
+
+    groups: list[dict] = [
+        {
+            "name": "AUTO",
+            "type": "url-test",
+            "url": TEST_URL,
+            "interval": TEST_INTERVAL,
+            "tolerance": 50,
+            # 全是 QUIC 节点时 normal 为空，退回全量，避免空组
+            "proxies": normal or names,
+        }
+    ]
+    if quic:
+        groups.append(
+            {
+                "name": "AUTO-HY2",
+                "type": "url-test",
+                "url": TEST_URL,
+                "interval": TEST_INTERVAL,
+                "tolerance": 50,
+                "proxies": quic,
+            }
+        )
+    groups.append({"name": "PROXY", "type": "select", "proxies": [g["name"] for g in groups] + ["DIRECT"] + names})
+
     return {
         "mixed-port": 7890,
         "allow-lan": False,
         "mode": "rule",
         "log-level": "info",
         "proxies": proxies,
-        "proxy-groups": [
-            {
-                "name": "AUTO",
-                "type": "url-test",
-                "url": "http://www.gstatic.com/generate_204",
-                "interval": TEST_INTERVAL,
-                "tolerance": 50,
-                "proxies": names,
-            },
-            {"name": "PROXY", "type": "select", "proxies": ["AUTO", "DIRECT"] + names},
-        ],
+        "proxy-groups": groups,
         # 国内直连分流：局域网 -> 中国大陆 IP -> 其余走代理
         "rules": [
             "GEOIP,LAN,DIRECT",

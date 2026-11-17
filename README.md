@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 节点配额 | 按 sources.yaml 顺序切片取前 500，实交只有头两个源贡献节点 | 轮转取（round-robin），10 个源全量参与，小源全进、大源均摊 |
 | 分流 | 只有 `MATCH,PROXY`，全部流量走代理 | `GEOIP,LAN` → `GEOIP,CN` → 其余走代理，国内站点直连 |
-| 测速间隔 | 300 秒 | 600 秒（节点来自 10 个源，降低测速开销） |
+| 代理分组 | 单个 `AUTO` 混合测速全部 500 个节点 | 拆成 `AUTO`（非 QUIC）+ `AUTO-HY2`（hysteria2 单独测速），避免低延迟 vmess 长期压制 QUIC 节点 |
 
 ## Clash Verge Rev 导入
 
@@ -18,7 +18,7 @@
 https://raw.githubusercontent.com/OWNER/free-vpn-clash-aggregator/main/output/clash.yaml
 ```
 
-`output/source-status.json` 可查看每个上游最近一次抓取结果和各源入选节点数。
+`output/source-status.json` 里 `kept_per_source` 是**每个源去重后的可用节点数**，不等于最终被选入配置的节点数（受 `MAX_NODES` 上限和轮转分配影响）。
 
 ### 中国大陆网络：raw 域名被阻断时的替代地址
 
@@ -37,7 +37,7 @@ https://gcore.jsdelivr.net/gh/OWNER/free-vpn-clash-aggregator@main/output/clash.
 
 ## 第一次使用前必须做
 
-1. 打开仓库的 **Actions** 标签页，点击 *I understand my workflows, go ahead and enable them*（新建仓库的 workflow 默认是关闭的）
+1. 打开仓库的 **Actions** 标签页。**fork 来的仓库**在这里点 *I understand my workflows, go ahead and enable them*；自己新建仓库再 push 的（workflow 已是 `active`）可跳过这步
 2. 左侧选 *Update Clash subscription* → *Run workflow* 手动跑一次
 3. 等它跑完（约 1 分钟），`output/clash.yaml` 才会存在，此时订阅链接才可用
 
@@ -55,9 +55,23 @@ python -m venv .venv
 | --- | --- | --- |
 | `MAX_NODES` | 500 | 输出节点上限。不建议关掉，配置过大影响 Clash Verge 启动和测速 |
 | `FETCH_TIMEOUT` | 20 | 单个上游抓取超时（秒） |
-| `TEST_INTERVAL` | 600 | `AUTO` 组 url-test 间隔（秒） |
+| `TEST_INTERVAL` | 300 | `AUTO` / `AUTO-HY2` 组的 url-test 间隔（秒） |
 
 注意：本地运行需要能访问 `raw.githubusercontent.com`。国内直连会因 SSL 被阻断而全部抓取失败（脚本会报 `all upstream sources failed`），此时请挂代理或直接依赖 GitHub Actions 生成。
+
+## 代理分组
+
+| 组 | 类型 | 成员 | 作用 |
+| --- | --- | --- | --- |
+| `AUTO` | url-test | 非 QUIC 节点 | 每 300 秒测速，选延迟最低的 |
+| `AUTO-HY2` | url-test | 仅 hysteria2 | 同上，把 QUIC 节点单独拉出来比 |
+| `PROXY` | select | 上两组 + DIRECT + 全部节点 | 分流规则最终指向它 |
+
+`PROXY` 默认选 `AUTO`。**一旦手动点了某个具体节点，客户端会记住这个选择（`store-selected`），`AUTO` 的自动选优就不再生效** —— 遇到“怎么不自动挑节点了”，先看这里是不是被手点过。
+
+为什么拆 `AUTO-HY2`：hysteria2 走 QUIC，带宽和抗丢包通常明显好于 vmess/ss，但基于单次 HTTP 探测的延迟数字往往更高。混在一个 url-test 里，它会被低延迟的 vmess 长期压制，几乎永远选不到。
+
+`url-test` 是**定时选优，不是故障转移**：当前节点中途挂掉不会立刻切换，最多要等一个测速周期（300 秒），期间那几次请求会先失败。`tolerance: 50` 表示新节点要比当前快 50ms 以上才切，避免在相近节点间来回抖动。
 
 ## 分流说明
 
