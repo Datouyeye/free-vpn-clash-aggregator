@@ -17,18 +17,23 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇺🇸 United States [TG]
+- name: 🇺🇸 United States/Los Angeles [GH:ripaojiedian/freenode]
   type: vless
-  server: 47.253.226.114
+  server: 172.236.239.126
   port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  uuid: 6b4861de-7316-4a5a-bc45-0cbd8bf97eab
   udp: true
-  flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: itunes.apple.com
   reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    public-key: SJAHlQal4h4gy7BFInw13ute3ZM49kXMWCkJj3F4tW0
+    short-id: 357a37e1
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
 - name: SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   type: ss
   server: 144.217.164.29
@@ -54,37 +59,32 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 美国 001
-  type: vless
+  type: vmess
   network: ws
-  server: fs.qicai99.com
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  servername: fs.qicai99.com
-  skip-cert-verify: false
-  tls: true
-  encryption: none
+  server: 162.159.1.33
+  port: 8080
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: fs.qicai99.com
-    path: /
-- type: vless
-  name: '🇺🇸_US_美国_IPV4 #2'
-  server: 172.233.129.179
-  port: 443
-  uuid: 8d602a84-d258-4953-8ef7-d64afff2e879
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5UVOUoMBYxyWuF-FCbXoEt8LHFkj7iZqZOABlvyvXV8
-    short-id: 955c702b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: 🇺🇸US_3|1.1MB/s
+  network: http
+  port: 52402
+  server: 104.225.148.201
+  tls: false
+  type: vmess
+  uuid: 0542f509-4368-4ee3-be54-0557fed80f6b
+  x-toolall-mihomo: true
 - name: AF 1 → tg@nicevpn123
   server: 121.127.46.147
   port: 989
@@ -92,24 +92,6 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 🇺🇸US_2|1.4MB/s
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6fa9def2-edcb-4348-b012-6622c959a620
-  ws-opts:
-    headers:
-      Host: prairie-formats-holland-bundle.trycloudflare.com
-    path: /@ferdolans7
-  xudp: true
 - cipher: aes-256-gcm
   name: nl|b8af|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -123,17 +105,17 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- name: 🇺🇸 United States/Hillsboro [GH:Surfboardv2ra]
+- name: 🌍 Lithuania [TG]
   type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  server: 84.32.54.237
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
-  flow: xtls-rprx-vision
   tls: true
-  servername: fuck.rkn
+  servername: rly-gw-cfg.galioncc.com
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
   client-fingerprint: chrome
 - name: VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   type: vmess
@@ -169,52 +151,39 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 俄罗斯 001
-  type: vless
-  network: ws
-  server: decdn-28.nome-rkp.net
-  port: 443
-  uuid: c1208c5a-2350-0003-affd-fc41b4319286
-  servername: decdn-28.nome-rkp.net
-  tls: true
-  client-fingerprint: chrome
-  encryption: none
-  ws-opts:
-    headers:
-      Host: decdn-28.nome-rkp.net
-    path: /media/ws/
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (2)
-  server: 172.233.139.98
-  port: 443
-  uuid: 62b5a30a-89de-4da7-b1c0-08abfad0cd1d
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZtWVf2gAix3etGziWVZ9apsWfWb5UOepCWQqVyIGxHI
-    short-id: 4d3f31a1
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+- name: 土耳其 001
+  type: vmess
+  network: http
+  server: 78.111.102.232
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  tls: false
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 🇺🇸US_5|3.1MB/s
+  network: http
+  port: 44441
+  server: 192.220.47.85
+  tls: false
+  type: vmess
+  uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
+  x-toolall-mihomo: true
 - name: AL 1 → tg@nicevpn123
   server: 31.171.153.181
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: '🇳🇬 尼日利亚 | NGA #1'
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20051
-  server: sclass-b1.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
   udp: true
 - cipher: aes-256-gcm
   name: nl|f92b|puddincat07@Telegram
@@ -229,19 +198,14 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇳🇱 The Netherlands/Haarlem [TG]
-  type: vless
-  server: 51.158.206.19
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇺🇸 United States/San Jose [GH:Surfboardv2ray/TGParse]
+  type: hysteria2
+  server: 37.123.193.151
+  port: 4942
+  password: 9263c76e
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
   type: vmess
   server: t1.620720.xyz
@@ -259,7 +223,7 @@ proxies:
     headers:
       Host: t1.620720.xyz
 - type: vless
-  name: '🇺🇸_US_美国_IPV4 (2) #2'
+  name: 🇺🇸_US_美国_IPV4 (2)
   server: 172.236.227.60
   port: 443
   uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
@@ -276,50 +240,41 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 俄罗斯 002
-  type: vless
+- name: 美国 002
+  type: vmess
   network: ws
-  server: 188.225.37.43
-  port: 443
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
-  servername: torvani.cyou
-  tls: true
-  client-fingerprint: firefox
+  server: 172.67.152.170
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: torvani.cyou
-    path: /api/boards/live
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (3)
-  server: 172.233.157.18
-  port: 443
-  uuid: 9a10a216-c8db-48d5-bb91-cf1ef245bd1d
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4DL3ZveBq9TIQbtIp2ZtIPI6zRFHGdcVAW-poC0UqDA
-    short-id: 30aa62c5
+      Host: mahilu.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
+  port: 443
+  server: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  servername: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: prozac-celebrities-inclusion-parallel.trycloudflare.com
+    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
 - name: AL 2 → tg@nicevpn123
   server: 31.171.153.178
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #4'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 13.213.15.244
-  type: ss
   udp: true
 - cipher: aes-256-gcm
   name: nl|2d27|puddincat07@Telegram
@@ -334,19 +289,14 @@ proxies:
   skip-cert-verify: false
   sni: ''
   type: hysteria2
-- name: '🇳🇱 The Netherlands/Haarlem [TG] #2'
-  type: vless
-  server: 51.158.206.103
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
+  type: hysteria2
+  server: 38.76.150.108
+  port: 36712
+  password: AIcYjw5Oc9Rrrr9SGDUBbBIC
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+  sni: 38.76.150.108
+  skip-cert-verify: true
 - name: SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
   type: ss
   server: 45.154.204.7
@@ -354,7 +304,7 @@ proxies:
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   cipher: chacha20-ietf-poly1305
 - type: vless
-  name: '🇺🇸_US_美国_IPV4 (3) #2'
+  name: 🇺🇸_US_美国_IPV4 (3)
   server: 172.233.156.229
   port: 443
   uuid: b9bc6f6c-09b7-43ce-b9c7-312d37f1a312
@@ -371,52 +321,32 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 004
-  type: vless
+- name: 美国 003
+  type: vmess
   network: ws
-  server: 103.31.4.160
+  server: russia.com
+  port: 2095
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #7'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  servername: moz.ar-marz.fun
-  tls: true
-  client-fingerprint: firefox
-  encryption: none
-  ws-opts:
-    headers:
-      Host: moz.ar-marz.fun
-    path: /man
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (4)
-  server: 172.235.63.167
-  port: 443
-  uuid: d95f222c-3a63-47f8-8e61-af83e1f143f5
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg
-    short-id: dd78b5c3
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  server: 54.151.179.216
+  type: ss
+  udp: true
 - name: AO 1 → tg@nicevpn123
   server: us.sptnk.space
   port: 57456
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 3fbeb668f48414f6
-  udp: true
-- name: '🇺🇸 美国 | USA #2'
-  password: HQGIuRN4S3
-  port: 59642
-  server: www.777064.xyz
-  skip-cert-verify: true
-  sni: www.777064.xyz
-  type: trojan
   udp: true
 - cipher: aes-256-gcm
   name: nl|8e6f|puddincat07@Telegram
@@ -431,19 +361,13 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.89
   type: hysteria2
-- name: '🇳🇱 The Netherlands/Haarlem [TG] #3'
-  type: vless
-  server: 51.158.206.20
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇩🇪 Germany/Frankfurt am Main [GH:Mahdi0024/ProxyCollector]
+  type: ss
+  server: 47.245.173.25
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
 - name: SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   type: ss
   server: 146.19.49.251
@@ -468,54 +392,32 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 瑞士 002
-  type: vless
+- name: 美国 004
+  type: vmess
   network: ws
-  server: 138.124.124.157
+  server: cold-dawn-9246.fly.dev
   port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  servername: fs.qicai99.com
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
   tls: true
-  client-fingerprint: chrome
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: fs.qicai99.com
-    path: /
-- type: vless
-  name: '🇸🇬_SG_新加坡_IPV4 #2'
-  server: 172.104.48.194
+      Host: cold-dawn-9246.fly.dev
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #5'
+  password: amazonskr05
   port: 443
-  uuid: a28d0884-193d-4591-aa64-8638ba1481ce
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: u_4r8NRmRsN5Ndbt0koyC73DLC7mCcK4wAA0YiIR4ko
-    short-id: b0af872e
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  server: 3.22.241.58
+  type: ss
+  udp: true
 - name: AO 2 → tg@nicevpn123
   server: 104.167.197.23
   port: 57456
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 3fbeb668f48414f6
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: 🇺🇸 美国 | USA 4
-  password: HQGIuRN4S3
-  port: 59642
-  server: 64.186.234.24
-  skip-cert-verify: true
-  sni: www.777064.xyz
-  type: trojan
   udp: true
 - cipher: aes-256-gcm
   name: nl|bc46|puddincat07@Telegram
@@ -530,19 +432,13 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.174
   type: hysteria2
-- name: '🇳🇱 The Netherlands/Haarlem [TG] #4'
-  type: vless
-  server: 51.158.206.96
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🇩🇪 Germany/Frankfurt am Main [TG]
+  type: ss
+  server: 8.211.38.49
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
 - name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   type: vmess
   server: 15.235.41.200
@@ -574,37 +470,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 瑞典 002
-  type: vless
+- name: 美国 005
+  type: vmess
   network: ws
-  server: 192.71.27.237
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  servername: fs.qicai99.com
-  tls: true
-  client-fingerprint: chrome
+  server: 162.159.137.249
+  port: 8080
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: fs.qicai99.com
-    path: /
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4
-  server: 139.162.91.224
-  port: 443
-  uuid: ff3038b1-a2f5-428f-89cd-5d5e4efba8e7
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk
-    short-id: e5b03494
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: nest-emily-healing-h.trycloudflare.com
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - name: AR 1 → tg@nicevpn123
   server: 170.80.111.6
   port: 989
@@ -625,19 +503,13 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇳🇱 The Netherlands/Lelystad [TG]
-  type: vless
-  server: 5.253.86.3
+- name: 🇬🇧 United Kingdom/Manchester [GH:MatinGhanbari/v2ray-conf]
+  type: ss
+  server: 141.98.101.178
   port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  password: shadowsocks
+  cipher: aes-128-gcm
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nl3.gofizz.in
-  reality-opts:
-    public-key: 51ZCyVOxvcD_smARtd9mV-3Rh_WurOzMGRFxk9u2Kgo
-    short-id: fa1754221e4c5f9e
-  client-fingerprint: firefox
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
   type: ss
   server: 71.19.148.143
@@ -662,37 +534,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 011
-  type: vless
+- name: 美国 006
+  type: vmess
   network: ws
-  server: 5.253.30.226
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  servername: fs.qicai99.com
-  tls: true
-  client-fingerprint: chrome
+  server: 104.21.82.39
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: fs.qicai99.com
+      Host: mahilu.site
     path: /
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (2)
-  server: 172.104.86.181
-  port: 443
-  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
-    short-id: c8559ca1
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
 - name: AR 2 → tg@nicevpn123
   server: 138.186.142.4
   port: 989
@@ -713,19 +567,6 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇳🇱 The Netherlands [TG]
-  type: vless
-  server: 81.171.14.72
-  port: 443
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: zovira.me
-  reality-opts:
-    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
-    short-id: 2237b916
-  client-fingerprint: chrome
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
   type: vmess
   server: 38.92.10.226
@@ -740,7 +581,7 @@ proxies:
   ws-opts:
     path: /test
 - type: vless
-  name: '🇺🇸_US_美国_IPV4 (4) #2'
+  name: 🇺🇸_US_美国_IPV4 (4)
   server: 172.235.51.71
   port: 443
   uuid: 3c17ead6-201a-4fba-8246-6327b911a1be
@@ -757,38 +598,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 013
-  type: vless
+- name: 其他 001
+  type: vmess
   network: ws
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  tls: true
-  encryption: none
+  server: mahilu.site
+  port: 2052
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: notls.lukongtou.eu.org
-    path: Telegram-WangCai2🇨🇳
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (3)
-  server: 172.105.197.24
-  port: 443
-  uuid: 81f4e114-5a60-41b5-9038-8d742380c84f
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms
-    short-id: 772bef67
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: mahilu.site
+    path: /
 - name: AR 3 → tg@nicevpn123
   server: 170.80.111.5
   port: 989
@@ -809,18 +631,6 @@ proxies:
   skip-cert-verify: false
   sni: vp3.yysyy.online
   type: hysteria2
-- name: 🇺🇸 United States/Los Angeles [TG]
-  type: vless
-  server: 143.246.62.191
-  port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  udp: true
-  tls: true
-  servername: github.githubassets.com
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  client-fingerprint: chrome
 - name: SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   type: ss
   server: 23.95.76.59
@@ -845,33 +655,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 伊朗 001
-  type: vless
-  network: tcp
-  server: base.hosamobenl.co.uk
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  servername: base.hosamobenl.co.uk
-  tls: true
-  client-fingerprint: chrome
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (4)
-  server: 139.162.91.137
-  port: 443
-  uuid: 5e6575a1-459c-4077-ac3d-92dea966ad7c
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw
-    short-id: 0c0c806b
+- name: 美国 007
+  type: vmess
   network: ws
+  server: 23.227.39.24
+  port: 8080
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - name: AR 4 → tg@nicevpn123
   server: 190.103.176.29
   port: 989
@@ -892,13 +688,6 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.29
   type: hysteria2
-- name: 🇺🇸 United States/Santa Clara [GH:Mahdi0024/Pro]
-  type: trojan
-  server: 167.88.61.52
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
 - name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   type: vmess
   server: 51.79.102.253
@@ -933,37 +722,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 019
-  type: vless
+- name: 法国 001
+  type: vmess
   network: ws
-  server: xray-piox09gf-calm-maple-6.cloady.io
-  port: 443
-  uuid: 5633d1c3-fa8e-cd74-5b6b-6c464f36472a
-  servername: xray-piox09gf-calm-maple-6.cloady.io
-  tls: true
-  client-fingerprint: chrome
+  server: 94.140.0.110
+  port: 8880
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: xray-piox09gf-calm-maple-6.cloady.io
-    path: /0f6186ec3c6d8474
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (5)
-  server: 139.162.101.74
-  port: 443
-  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
-    short-id: 7e1e09f4
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: food.zhaal.ir
+    path: /
 - name: AR 5 → tg@nicevpn123
   server: 190.103.179.23
   port: 989
@@ -987,13 +758,6 @@ proxies:
   skip-cert-verify: true
   sni: 'off'
   type: hysteria2
-- name: 🇬🇧 United Kingdom [TG]
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
 - name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   type: ssr
   server: 107.151.182.253
@@ -1020,40 +784,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 025
-  type: vless
+- name: 美国 008
+  type: vmess
   network: ws
-  server: ct.877774.xyz
-  port: 443
-  uuid: 12d32e9b-d41f-4677-aa51-83e21d2837f2
-  servername: it-mil.862400.xyz
-  tls: true
-  udp: true
-  client-fingerprint: random
-  xudp: true
-  encryption: none
+  server: 23.227.38.22
+  port: 8080
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      Host: it-mil.862400.xyz
-    path: /announcement?ed=2048
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (6)
-  server: 172.105.203.15
-  port: 443
-  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
-    short-id: 0784b134
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - name: AT 1 → tg@nicevpn123
   server: 192.36.27.116
   port: 989
@@ -1078,13 +821,6 @@ proxies:
   skip-cert-verify: true
   sni: 155.248.209.2
   type: hysteria2
-- name: 🇺🇸 United States/Atlanta [TG]
-  type: ss
-  server: 185.215.132.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-92.118.112.101:9483
   type: ss
   server: 92.118.112.101
@@ -1092,7 +828,7 @@ proxies:
   password: qFvn2fNEvBgM5knffrN96q
   cipher: chacha20-ietf-poly1305
 - type: vless
-  name: '🇯🇵_JP_日本_IPV4 #2'
+  name: 🇯🇵_JP_日本_IPV4
   server: 45.76.106.69
   port: 443
   uuid: db102c51-5f7f-4283-b9c1-942c5c6e2616
@@ -1109,38 +845,18 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 026
-  type: vless
+- name: 美国 009
+  type: trojan
   network: ws
-  server: www.vmware.com
-  port: 2087
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
-  servername: v7-e4v.pages.dev
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  ws-opts:
-    headers:
-      Host: v7-e4v.pages.dev
-    path: /
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (7)
-  server: 172.105.212.91
+  server: 23.227.38.11
   port: 443
-  uuid: 1f08d52f-126e-46e3-929a-4b6a58e21168
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8
-    short-id: '17676229'
-  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: syndication-statutes-wanted-logo.trycloudflare.com
+    path: /argox-tr
 - name: AT 2 → tg@nicevpn123
   server: 192.71.166.102
   port: 989
@@ -1166,13 +882,6 @@ proxies:
   skip-cert-verify: true
   sni: us.mi11o4ka.com
   type: hysteria2
-- name: 🇺🇸 United States/Atlanta [GH:barry-far/V2r]
-  type: ss
-  server: 149.40.57.134
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000
   type: ss
   server: 15.204.247.49
@@ -1180,7 +889,7 @@ proxies:
   password: 8JCsPssfgS8tiRwiMlhARg==
   cipher: aes-256-gcm
 - type: vless
-  name: '🇯🇵_JP_日本_IPV4 (2) #2'
+  name: 🇯🇵_JP_日本_IPV4 (2)
   server: 104.238.160.118
   port: 443
   uuid: 396266a6-5617-4f57-9f01-a168756ee553
@@ -1197,40 +906,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 乌克兰 002
-  type: vless
-  network: http
-  server: shh-hja-bbw.speedbluepanel.sbs
-  port: 2053
-  uuid: 39397ce8-51f5-4780-957f-942b4dfd75f7
-  tls: false
-  udp: true
-  encryption: mlkem768x25519plus.native.0rtt.4ABzCb9yeBZzvV-bRT5Tqpb3kejYBGn4Vib4PJiSyUg
-  http-opts:
-    headers:
-      Host:
-      - docs.github.com
-    method: GET
-    path:
-    - /
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (8)
-  server: 139.162.91.200
-  port: 443
-  uuid: 847bdd83-9e2f-4708-81ed-729a2ca6eeec
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: -g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ
-    short-id: 7bae4b22
+- name: 美国 010
+  type: vmess
   network: ws
+  server: fbi.gov
+  port: 8080
+  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - name: AT 3 → tg@nicevpn123
   server: 192.71.166.100
   port: 989
@@ -1252,13 +940,6 @@ proxies:
   server: 149.22.87.240
   type: ss
   udp: true
-- name: 🇪🇸 Spain/Madrid [TG]
-  type: ss
-  server: 5.188.181.201
-  port: 9001
-  password: UkXRsXvR6buDMG2Y
-  cipher: aes-256-cfb
-  udp: true
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
   type: ss
   server: pupas-shirting-unsung.freesocks.work
@@ -1266,7 +947,7 @@ proxies:
   password: p78naCf2EfOlRSLTX0wFVx
   cipher: chacha20-ietf-poly1305
 - type: vless
-  name: '🇯🇵_JP_日本_IPV4 (3) #2'
+  name: 🇯🇵_JP_日本_IPV4 (3)
   server: 45.77.8.233
   port: 443
   uuid: 242212a6-200b-4c09-b2e5-86a8dd490331
@@ -1283,37 +964,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 027
-  type: vless
-  network: grpc
-  server: 104.171.137.39
-  port: 443
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  servername: notebook.filnex.baby
-  tls: true
-  udp: true
-  client-fingerprint: ios
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de6.v1
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (9)
-  server: 139.162.89.151
-  port: 443
-  uuid: dbca719d-2cfb-48a2-8bc6-8c658a24b142
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Q_HUTa9IpIBeTmm71KVwJrzdgBag_PpMtTKoH2fY3Qo
-    short-id: 07febec7
+- name: 其他 002
+  type: vmess
   network: ws
+  server: yh3.freeh1.xyz
+  port: 8080
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: larger-marketing-amounts-skin.trycloudflare.com
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - name: AT 4 → tg@nicevpn123
   server: 185.180.12.81
   port: 989
@@ -1333,13 +996,6 @@ proxies:
   port: 8080
   server: 128.1.186.73
   type: ss
-  udp: true
-- name: 🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro]
-  type: ss
-  server: 5.188.181.201
-  port: 9040
-  password: p9z5BVADH2YFs3MN
-  cipher: aes-256-cfb
   udp: true
 - name: SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
   type: ss
@@ -1365,39 +1021,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 028
-  type: vless
-  network: xhttp
-  server: 167.82.64.7
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  servername: cdn.akamai.steamstatic.com
-  tls: true
-  udp: true
-  client-fingerprint: chrome
-  xhttp-opts:
-    host: Xpnt5eam.global.ssl.fastly.net
-    mode: auto
-    path: /
-    x-padding-bytes: 100-1000
-- type: vless
-  name: '🇺🇸_US_美国_IPV4 (6) #2'
-  server: 172.233.129.46
-  port: 443
-  uuid: 325a2d32-286c-44d8-8bf7-d6dc85ecfd53
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z0yUixOaVZhwnYyI9XtSSqgxBCerCWqticoYPmwPzzA
-    short-id: dd282cb2
+- name: 其他 003
+  type: vmess
   network: ws
+  server: cfcdn1.sanfencdn9.com
+  port: 2086
+  uuid: 3f09c198-da80-44ce-a72b-40bc600b2321
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
 - name: BA 1 → tg@nicevpn123
   server: 185.164.35.9
   port: 989
@@ -1417,13 +1053,6 @@ proxies:
   port: 8080
   server: 79.110.54.250
   type: ss
-  udp: true
-- name: '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #2'
-  type: ss
-  server: 5.188.181.201
-  port: 9027
-  password: EXN3S3eQpjE7EJu8
-  cipher: aes-256-cfb
   udp: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.codefyinc.com:443
   type: vmess
@@ -1458,40 +1087,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 029
-  type: vless
-  network: http
-  server: 204.10.192.73
-  port: 8080
-  uuid: c605732d-6619-402c-be1d-98bedc890106
-  tls: false
-  udp: true
-  encryption: mlkem768x25519plus.native.0rtt.ZJRQ-ZcYLX3t1OLkarU8iAvgaZByxC-VqcS6DqTvfTs
-  http-opts:
-    headers:
-      Host:
-      - tgju.org
-    method: GET
-    path:
-    - /
-- type: vless
-  name: 🇺🇸_US_美国_IPV4 (8)
-  server: 172.233.142.149
-  port: 443
-  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
-    short-id: 4206512a
+- name: 加拿大 001
+  type: vmess
   network: ws
+  server: 108.181.23.161
+  port: 8080
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: /ws
     headers:
-      Host: itunes.apple.com
+      Host: internet.life.com.by
+    path: /1IKYjV0r/
 - name: BE 1 → tg@nicevpn123
   server: 57.180.10.14
   port: 443
@@ -1505,13 +1113,6 @@ proxies:
   port: 8080
   server: 107.155.57.11
   type: ss
-  udp: true
-- name: '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #3'
-  type: ss
-  server: 5.188.181.201
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
   udp: true
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443
   type: ss
@@ -1537,40 +1138,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 其他 012
+- name: 美国 011
   type: vmess
   network: ws
-  server: grab-assistance-crawford-capital.trycloudflare.com
-  port: 443
-  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
-  servername: grab-assistance-crawford-capital.trycloudflare.com
-  skip-cert-verify: true
-  tls: true
+  server: 162.159.134.23
+  port: 8080
+  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
+  tls: false
   alterId: 0
   cipher: auto
-  delay: 1495
   ws-opts:
     headers:
-      Host: grab-assistance-crawford-capital.trycloudflare.com
-    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
-- type: vless
-  name: '🇺🇸_US_美国_IPV4 (10) #2'
-  server: 172.233.139.212
-  port: 443
-  uuid: b21a60ef-9042-42c8-bb13-160528ea19c6
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: bRB-Z_UOQ_sk8UFczAjrpkgKIg6cVdTNGnsyC7vAoyg
-    short-id: 7a87386b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: championship-bidding-oxygen-brochure.trycloudflare.com
+    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - name: BE 2 → tg@nicevpn123
   server: 57.181.42.0
   port: 443
@@ -1584,13 +1164,6 @@ proxies:
   port: 8080
   server: 107.151.182.197
   type: ss
-  udp: true
-- name: '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #4'
-  type: ss
-  server: 5.188.181.201
-  port: 9003
-  password: JdmRK9gMEqFgs8nP
-  cipher: aes-256-cfb
   udp: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-198.23.174.168:20086
   type: vmess
@@ -1623,38 +1196,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 034
+- name: 美国 012
   type: vmess
-  network: ws
-  server: US032012.westmgreen.com
-  port: 443
-  uuid: fbc990c5-c62e-4e31-a9a5-db3a4fe42741
-  skip-cert-verify: false
-  tls: true
+  network: http
+  server: 134.122.41.160
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  tls: false
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: US032012.westmgreen.com
-    path: /
-- type: vless
-  name: 🇯🇵_JP_日本_IPV4 (10)
-  server: 172.237.14.205
-  port: 443
-  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
-    short-id: da26e5a2
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  http-opts:
+    method: GET
+    path:
+    - /
 - name: BE 3 → tg@nicevpn123
   server: 57.180.26.205
   port: 17391
@@ -1669,13 +1223,6 @@ proxies:
   port: 8080
   server: 107.155.57.51
   type: ss
-  udp: true
-- name: 🇺🇸 United States/Atlanta [GH:Mahdi0024/Pro]
-  type: ss
-  server: 167.88.63.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
   udp: true
 - name: SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
   type: ssr
@@ -1703,38 +1250,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 035
+- name: 美国 013
   type: vmess
   network: ws
-  server: 54.37.131.126
-  port: 80
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  skip-cert-verify: false
+  server: 23.227.38.23
+  port: 8080
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-- type: vless
-  name: '🇺🇸_US_美国_IPV4 (13) #2'
-  server: 172.235.37.168
-  port: 443
-  uuid: dbac71f3-ab05-4194-985b-f07088bf1a4a
-  tls: true
-  servername: itunes.apple.com
-  sni: itunes.apple.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1iwAzh_XzSCYWZEVZ0lfczKFd--jXx3coCt5le58gEM
-    short-id: c52e85fe
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+      Host: uh-lawyers-instruments-kernel.trycloudflare.com
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - name: BE 4 → tg@nicevpn123
   server: 57.180.65.163
   port: 443
@@ -1748,13 +1276,6 @@ proxies:
   port: 8080
   server: 23.251.121.242
   type: ss
-  udp: true
-- name: 🇺🇸 United States/Washington [GH:Mahdi0024/Pro]
-  type: ss
-  server: 172.111.38.72
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
   udp: true
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443
   type: vmess
@@ -1790,20 +1311,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 法国 001
+- name: 美国 014
   type: vmess
   network: ws
-  server: 145.239.55.210
-  port: 80
-  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
-  skip-cert-verify: false
+  server: 162.159.130.208
+  port: 8080
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-    path: /
+      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - name: BE 5 → tg@nicevpn123
   server: jp6.mmmmmmmmmm.cfd
   port: 23234
@@ -1855,20 +1375,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 036
+- name: 美国 015
   type: vmess
-  network: ws
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  skip-cert-verify: false
-  tls: true
+  network: http
+  server: 51.159.155.52
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  tls: false
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /
+  http-opts:
+    method: GET
+    path:
+    - /
 - name: BG 1 → tg@nicevpn123
   server: 147.78.140.30
   port: 443
@@ -1924,20 +1443,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 比利时 002
+- name: 罗马尼亚 001
   type: vmess
-  network: ws
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  skip-cert-verify: false
+  network: http
+  server: 45.82.31.164
+  port: 3389
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
   tls: false
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /
+  http-opts:
+    method: GET
+    path:
+    - /
 - name: BG 10 → tg@nicevpn123
   server: 147.78.140.30
   port: 443
@@ -1994,20 +1512,19 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 美国 037
+- name: 美国 016
   type: vmess
   network: ws
-  server: 198.41.212.150
-  port: 443
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  skip-cert-verify: false
-  tls: true
+  server: 162.159.5.6
+  port: 8080
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: clash6.ssr-free.xyz
-    path: /
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - name: BG 11 → tg@nicevpn123
   server: 147.78.140.30
   port: 443
@@ -2056,20 +1573,19 @@ proxies:
   servername: www.microsoft.com
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 日本 002
+- name: 美国 017
   type: vmess
   network: ws
-  server: 146.56.162.25
-  port: 443
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  skip-cert-verify: false
-  tls: true
+  server: russia.com
+  port: 8880
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
 - name: BG 12 → tg@nicevpn123
   server: 147.78.140.231
   port: 443
@@ -2106,20 +1622,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   tls: false
   skip-cert-verify: false
-- name: 日本 003
+- name: 其他 004
   type: vmess
   network: ws
-  server: 146.56.166.153
-  port: 443
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  skip-cert-verify: false
-  tls: true
+  server: yh2.freeh1.xyz
+  port: 8080
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: lg30.cfcdn3.xyz
-    path: /
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - name: BG 13 → tg@nicevpn123
   server: 147.78.140.68
   port: 443
@@ -2167,19 +1682,18 @@ proxies:
   servername: xship.top
   sni: xship.top
   skip-cert-verify: true
-- name: 美国 038
+- name: 美国 018
   type: vmess
   network: ws
-  server: 141.101.114.200
-  port: 443
-  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-  skip-cert-verify: false
-  tls: true
+  server: 172.67.116.48
+  port: 80
+  uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: v2ray2.ssr-free2.xyz
+      Host: wap.hostmjj.com
     path: /
 - name: BG 14 → tg@nicevpn123
   server: 213.183.63.69
@@ -2228,19 +1742,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 204adda7e3da
-- name: 美国 039
+- name: 中国 001
   type: vmess
   network: ws
-  server: 162.159.1.33
+  server: yh1.dtku41.xyz
   port: 8080
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+      Host: uh-lawyers-instruments-kernel.trycloudflare.com
+    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - name: BG 15 → tg@nicevpn123
   server: 213.183.63.69
   port: 9020
@@ -2284,19 +1798,19 @@ proxies:
   up: '11'
   down: '55'
   auth-str: dongtaiwang.com
-- name: 土耳其 001
+- name: 中国 002
   type: vmess
-  network: http
-  server: 78.111.102.232
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+  network: ws
+  server: yh2.dtku41.xyz
+  port: 8080
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
   tls: false
   alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
+  ws-opts:
+    headers:
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - name: BG 16 → tg@nicevpn123
   server: 213.183.63.69
   port: 9025
@@ -2312,7 +1826,7 @@ proxies:
   type: ss
   udp: true
 - type: vless
-  name: '🇯🇵_JP_日本_IPV4 (4) #2'
+  name: 🇯🇵_JP_日本_IPV4 (4)
   server: zfapi.zalolink.com
   port: 43149
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -2325,18 +1839,18 @@ proxies:
   reality-opts:
     public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
     short-id: 15aa0ad4
-- name: 美国 040
+- name: 美国 019
   type: vmess
   network: ws
-  server: 172.67.152.170
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  server: 104.21.8.157
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: mahilu.site
+      Host: s1c.v2.v001sss.xyz
     path: /
 - name: BG 17 → tg@nicevpn123
   server: 213.183.63.69
@@ -2361,19 +1875,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 041
+- name: 美国 020
   type: vmess
   network: ws
-  server: russia.com
-  port: 2095
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
+  server: 172.67.130.140
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
+      Host: s1c.v2.v001sss.xyz
+    path: /
 - name: BG 18 → tg@nicevpn123
   server: 213.183.63.69
   port: 9019
@@ -2397,19 +1911,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 042
+- name: 美国 021
   type: vmess
   network: ws
-  server: cold-dawn-9246.fly.dev
+  server: hms082.gwdef.sbs
   port: 443
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
   tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: cold-dawn-9246.fly.dev
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+      Host: gwdef.sbs
+    path: /linkws
 - name: BG 19 → tg@nicevpn123
   server: 213.183.63.69
   port: 9029
@@ -2433,19 +1947,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 043
+- name: 美国 022
   type: vmess
   network: ws
-  server: 162.159.137.249
-  port: 8080
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  server: 104.21.234.52
+  port: 80
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: nest-emily-healing-h.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+      Host: a.prapt1.ir
+    path: /
 - name: BG 3 → tg@nicevpn123
   server: 147.78.140.68
   port: 443
@@ -2477,19 +1991,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 044
-  type: vmess
+- name: 乌克兰 001
+  type: trojan
   network: ws
-  server: 104.21.82.39
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  tls: false
-  alterId: 0
-  cipher: auto
+  server: 95.164.33.62
+  port: 443
+  password: 0b1371aa-649d-41dc-9126-338c87936500
+  skip-cert-verify: true
+  sni: sourceforge.net
   ws-opts:
     headers:
-      Host: mahilu.site
-    path: /
+      Host: sourceforge.net
+    path: /websocket
 - name: BG 5 → tg@nicevpn123
   server: 147.78.140.231
   port: 443
@@ -2521,19 +2034,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 其他 013
+- name: 美国 023
   type: vmess
   network: ws
-  server: mahilu.site
-  port: 2052
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  server: 104.26.4.57
+  port: 2095
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: mahilu.site
-    path: /
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
 - name: BG 7 → tg@nicevpn123
   server: 147.78.140.68
   port: 443
@@ -2565,19 +2078,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 045
-  type: vmess
-  network: ws
-  server: 23.227.39.24
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: 其他 007
+  type: trojan
+  network: grpc
+  server: fkvip102.qlgq.fun
+  port: 11789
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: fkvip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: fkvip102
 - name: BR 1 → tg@nicevpn123
   server: fell3.dogsvpn.top
   port: 7704
@@ -2602,19 +2114,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 法国 002
-  type: vmess
-  network: ws
-  server: 94.140.0.110
-  port: 8880
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
+- name: 其他 008
+  type: trojan
+  network: grpc
+  server: fkvip102.qlgq.fun
+  port: 21789
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: fkvip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: fkvip102
 - name: CH 1 → tg@nicevpn123
   server: 64.110.64.80
   port: 11005
@@ -2639,19 +2150,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 046
-  type: vmess
-  network: ws
-  server: 23.227.38.22
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: 其他 009
+  type: trojan
+  network: grpc
+  server: fkvip102.qlgq.fun
+  port: 31789
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: fkvip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: fkvip102
 - name: CH 2 → tg@nicevpn123
   server: 64.110.64.80
   port: 11007
@@ -2681,18 +2191,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 047
+- name: 其他 010
   type: trojan
-  network: ws
-  server: 23.227.38.11
-  port: 443
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  network: grpc
+  server: ukvip101.qlgq.fun
+  port: 14568
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  ws-opts:
-    headers:
-      Host: syndication-statutes-wanted-logo.trycloudflare.com
-    path: /argox-tr
+  tls: true
+  udp: true
+  sni: ukvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: ukvip101
 - name: CH 3 → tg@nicevpn123
   server: 64.110.64.80
   port: 11006
@@ -2723,19 +2233,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: 美国 048
-  type: vmess
-  network: ws
-  server: fbi.gov
-  port: 8080
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
+- name: 其他 011
+  type: trojan
+  network: grpc
+  server: ukvip101.qlgq.fun
+  port: 14586
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: ukvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: ukvip101
 - name: CH 4 → tg@nicevpn123
   server: 64.110.64.80
   port: 11004
@@ -2764,19 +2273,18 @@ proxies:
   sni: bing.com
   type: hysteria
   up: 11 Mbps
-- name: 其他 014
-  type: vmess
-  network: ws
-  server: yh3.freeh1.xyz
-  port: 8080
-  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: larger-marketing-amounts-skin.trycloudflare.com
-    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+- name: 其他 012
+  type: trojan
+  network: grpc
+  server: ukvip101.qlgq.fun
+  port: 18885
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: ukvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: ukvip101
 - name: CH 5 → tg@nicevpn123
   server: 64.110.64.80
   port: 11000
@@ -2805,19 +2313,18 @@ proxies:
   sni: bing.com
   type: hysteria
   up: 11 Mbps
-- name: 其他 015
-  type: vmess
-  network: ws
-  server: cfcdn1.sanfencdn9.com
-  port: 2086
-  uuid: 3f09c198-da80-44ce-a72b-40bc600b2321
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us77SmSk86j.fzbqfrse.xyz
-    path: /video/Z7qdcrAGRw
+- name: 其他 013
+  type: trojan
+  network: grpc
+  server: klvip101.qlgq.fun
+  port: 10443
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: klvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: klvip101
 - name: CY 1 → tg@nicevpn123
   server: 213.169.137.221
   port: 989
@@ -2841,19 +2348,18 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 加拿大 001
-  type: vmess
-  network: ws
-  server: 108.181.23.161
-  port: 8080
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: internet.life.com.by
-    path: /1IKYjV0r/
+- name: 其他 014
+  type: trojan
+  network: grpc
+  server: klvip101.qlgq.fun
+  port: 20443
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: klvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: klvip101
 - name: EC 1 → tg@nicevpn123
   server: 179.49.5.114
   port: 989
@@ -2875,19 +2381,18 @@ proxies:
   sni: 775c8bt.lt4.h1clayd.click
   tls: false
   type: hysteria2
-- name: 美国 049
-  type: vmess
-  network: ws
-  server: 162.159.134.23
-  port: 8080
-  uuid: 9b196b50-37f2-4f4b-b175-06273adc6207
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: championship-bidding-oxygen-brochure.trycloudflare.com
-    path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
+- name: 其他 015
+  type: trojan
+  network: grpc
+  server: klvip101.qlgq.fun
+  port: 30443
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: klvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: klvip101
 - name: FI 1 → tg@nicevpn123
   server: 195.20.17.224
   port: 34282
@@ -2910,19 +2415,18 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 美国 050
-  type: vmess
-  network: http
-  server: 134.122.41.160
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-  tls: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
+- name: 其他 016
+  type: trojan
+  network: grpc
+  server: sgvip101.qlgq.fun
+  port: 11223
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: sgvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: sgvip101
 - name: FI 2 → tg@nicevpn123
   server: 95.217.181.48
   port: 443
@@ -2945,19 +2449,18 @@ proxies:
   sni: 192.255.152.147
   tls: false
   type: hysteria2
-- name: 美国 051
-  type: vmess
-  network: ws
-  server: 23.227.38.23
-  port: 8080
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: uh-lawyers-instruments-kernel.trycloudflare.com
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- name: 其他 017
+  type: trojan
+  network: grpc
+  server: sgvip101.qlgq.fun
+  port: 21223
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: sgvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: sgvip101
 - name: IE 1 → tg@nicevpn123
   server: 54.155.61.41
   port: 22222
@@ -2981,19 +2484,18 @@ proxies:
   sni: de1.obxodvpn.us
   tls: false
   type: hysteria2
-- name: 美国 052
-  type: vmess
-  network: ws
-  server: 162.159.130.208
-  port: 8080
-  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: widescreen-instruction-breakdown-postage.trycloudflare.com
-    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+- name: 其他 018
+  type: trojan
+  network: grpc
+  server: sgvip101.qlgq.fun
+  port: 31223
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: sgvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: sgvip101
 - name: IE 10 → tg@nicevpn123
   server: 52.209.230.191
   port: 22222
@@ -3016,19 +2518,18 @@ proxies:
   sni: steel7.hadsvpn.com
   tls: false
   type: hysteria2
-- name: 美国 053
-  type: vmess
-  network: http
-  server: 51.159.155.52
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-  tls: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
+- name: 其他 019
+  type: trojan
+  network: grpc
+  server: sgvip101.qlgq.fun
+  port: 41223
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: sgvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: sgvip101
 - name: IE 11 → tg@nicevpn123
   server: 52.208.218.51
   port: 22222
@@ -3052,19 +2553,18 @@ proxies:
   sni: lakes.blog-forme.ru
   tls: false
   type: hysteria2
-- name: 罗马尼亚 001
-  type: vmess
-  network: http
-  server: 45.82.31.164
-  port: 3389
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-  tls: false
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
+- name: 其他 020
+  type: trojan
+  network: grpc
+  server: sgvip101.qlgq.fun
+  port: 51223
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: sgvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: sgvip101
 - name: IE 2 → tg@nicevpn123
   server: 54.72.213.33
   port: 22222
@@ -3087,19 +2587,18 @@ proxies:
   sni: speedtestmark.com
   tls: false
   type: hysteria2
-- name: 美国 054
-  type: vmess
-  network: ws
-  server: 162.159.5.6
-  port: 8080
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- name: 其他 021
+  type: trojan
+  network: grpc
+  server: lavip101.qlgq.fun
+  port: 11156
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip101
 - name: IE 3 → tg@nicevpn123
   server: 34.255.145.254
   port: 22222
@@ -3126,19 +2625,18 @@ proxies:
   sni: 109.70.74.213
   tls: false
   type: hysteria2
-- name: 美国 055
-  type: vmess
-  network: ws
-  server: russia.com
-  port: 8880
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
+- name: 其他 022
+  type: trojan
+  network: grpc
+  server: lavip101.qlgq.fun
+  port: 21156
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip101
 - name: IE 4 → tg@nicevpn123
   server: 54.72.176.224
   port: 22222
@@ -3167,19 +2665,18 @@ proxies:
   sni: fiproxy1.lockdwn.com
   tls: false
   type: hysteria2
-- name: 其他 016
-  type: vmess
-  network: ws
-  server: yh2.freeh1.xyz
-  port: 8080
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- name: 其他 023
+  type: trojan
+  network: grpc
+  server: lavip101.qlgq.fun
+  port: 31156
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip101
 - name: IE 5 → tg@nicevpn123
   server: 52.169.202.174
   port: 28612
@@ -3209,19 +2706,18 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 美国 056
-  type: vmess
-  network: ws
-  server: 172.67.116.48
-  port: 80
-  uuid: 22a13aa2-4854-44cb-e090-ec71ab84b1ff
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: wap.hostmjj.com
-    path: /
+- name: 其他 024
+  type: trojan
+  network: grpc
+  server: lavip102.qlgq.fun
+  port: 49643
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip102
 - name: IE 6 → tg@nicevpn123
   server: 34.249.148.68
   port: 22222
@@ -3247,19 +2743,18 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 中国 004
-  type: vmess
-  network: ws
-  server: yh1.dtku41.xyz
-  port: 8080
-  uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: uh-lawyers-instruments-kernel.trycloudflare.com
-    path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
+- name: 其他 025
+  type: trojan
+  network: grpc
+  server: lavip102.qlgq.fun
+  port: 20443
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip102
 - name: IE 7 → tg@nicevpn123
   server: 52.18.22.51
   port: 22222
@@ -3290,19 +2785,18 @@ proxies:
   sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
   tls: false
   type: hysteria2
-- name: 中国 005
-  type: vmess
-  network: ws
-  server: yh2.dtku41.xyz
-  port: 8080
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- name: 其他 026
+  type: trojan
+  network: grpc
+  server: lavip102.qlgq.fun
+  port: 30443
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: lavip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: lavip102
 - name: IE 8 → tg@nicevpn123
   server: 23.92.127.134
   port: 989
@@ -3334,19 +2828,18 @@ proxies:
   sni: 179.61.132.96
   tls: false
   type: hysteria2
-- name: 美国 057
-  type: vmess
-  network: ws
-  server: 104.21.8.157
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
+- name: 其他 027
+  type: trojan
+  network: grpc
+  server: hkvip101.qlgq.fun
+  port: 12249
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: hkvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip101
 - name: IE 9 → tg@nicevpn123
   server: 34.254.88.91
   port: 22222
@@ -3377,19 +2870,18 @@ proxies:
   sni: www.apple.com
   tls: false
   type: hysteria2
-- name: 美国 058
-  type: vmess
-  network: ws
-  server: 172.67.130.140
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
+- name: 其他 028
+  type: trojan
+  network: grpc
+  server: hkvip101.qlgq.fun
+  port: 22249
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: hkvip101.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip101
 - name: IL 1 → tg@nicevpn123
   server: 193.182.144.65
   port: 989
@@ -3419,19 +2911,18 @@ proxies:
   sni: pic.bstarstatic.com
   tls: false
   type: hysteria2
-- name: 美国 059
-  type: vmess
-  network: ws
-  server: hms082.gwdef.sbs
-  port: 443
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+- name: 其他 029
+  type: trojan
+  network: grpc
+  server: hkvip102.qlgq.fun
+  port: 32249
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
   tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: gwdef.sbs
-    path: /linkws
+  udp: true
+  sni: hkvip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip102
 - name: IL 2 → tg@nicevpn123
   server: 192.71.27.87
   port: 989
@@ -3461,19 +2952,18 @@ proxies:
   sni: hy.config7x.site
   tls: false
   type: hysteria2
-- name: 美国 060
-  type: vmess
-  network: ws
-  server: 104.21.234.52
-  port: 80
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
+- name: 其他 030
+  type: trojan
+  network: grpc
+  server: hkvip102.qlgq.fun
+  port: 42249
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: hkvip102.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip102
 - name: IL 3 → tg@nicevpn123
   server: 193.182.144.240
   port: 989
@@ -3500,18 +2990,18 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 乌克兰 003
+- name: 其他 031
   type: trojan
-  network: ws
-  server: 95.164.33.62
-  port: 443
-  password: 0b1371aa-649d-41dc-9126-338c87936500
+  network: grpc
+  server: hkvip103.qlgq.fun
+  port: 52249
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
-  sni: sourceforge.net
-  ws-opts:
-    headers:
-      Host: sourceforge.net
-    path: /websocket
+  tls: true
+  udp: true
+  sni: hkvip103.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip103
 - name: IM 1 → tg@nicevpn123
   server: 37.235.55.42
   port: 989
@@ -3538,19 +3028,18 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 美国 061
-  type: vmess
-  network: ws
-  server: 104.26.4.57
-  port: 2095
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
+- name: 其他 032
+  type: trojan
+  network: grpc
+  server: hkvip103.qlgq.fun
+  port: 11116
+  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  sni: hkvip103.qlgq.fun
+  grpc-opts:
+    grpc-service-name: hkvip103
 - name: IM 2 → tg@nicevpn123
   server: 192.71.211.161
   port: 989
@@ -3577,18 +3066,18 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 其他 019
+- name: 其他 033
   type: trojan
   network: grpc
-  server: fkvip102.qlgq.fun
-  port: 11789
+  server: hkvip104.qlgq.fun
+  port: 45136
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: fkvip102.qlgq.fun
+  sni: hkvip104.qlgq.fun
   grpc-opts:
-    grpc-service-name: fkvip102
+    grpc-service-name: hkvip104
 - name: IM 3 → tg@nicevpn123
   server: 37.235.55.21
   port: 989
@@ -3613,18 +3102,18 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 其他 020
+- name: 其他 034
   type: trojan
   network: grpc
-  server: fkvip102.qlgq.fun
-  port: 21789
+  server: hkvip104.qlgq.fun
+  port: 46216
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: fkvip102.qlgq.fun
+  sni: hkvip104.qlgq.fun
   grpc-opts:
-    grpc-service-name: fkvip102
+    grpc-service-name: hkvip104
 - name: IR 1 → tg@nicevpn123
   server: 45.81.18.85
   port: 38483
@@ -3649,18 +3138,18 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 其他 021
+- name: 其他 035
   type: trojan
   network: grpc
-  server: fkvip102.qlgq.fun
-  port: 31789
+  server: hkvip105.qlgq.fun
+  port: 41116
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: fkvip102.qlgq.fun
+  sni: hkvip105.qlgq.fun
   grpc-opts:
-    grpc-service-name: fkvip102
+    grpc-service-name: hkvip105
 - name: IR 10 → tg@nicevpn123
   server: 89.39.208.217
   port: 7021
@@ -3686,18 +3175,18 @@ proxies:
   sni: pl3.nexfile.net
   tls: false
   type: hysteria2
-- name: 其他 022
+- name: 其他 036
   type: trojan
   network: grpc
-  server: ukvip101.qlgq.fun
-  port: 14568
+  server: hkvip105.qlgq.fun
+  port: 51116
   password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: ukvip101.qlgq.fun
+  sni: hkvip105.qlgq.fun
   grpc-opts:
-    grpc-service-name: ukvip101
+    grpc-service-name: hkvip105
 - name: IR 11 → tg@nicevpn123
   server: 212.80.9.133
   port: 2002
@@ -3723,18 +3212,22 @@ proxies:
   sni: lv2.nexfile.net
   tls: false
   type: hysteria2
-- name: 其他 023
-  type: trojan
-  network: grpc
-  server: ukvip101.qlgq.fun
-  port: 14586
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 澳大利亚 001
+  type: vmess
+  network: ws
+  server: 1.1.1.1
+  port: 443
+  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
+  servername: usbk.cfip.top
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: ukvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: ukvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: usbk.cfip.top
+    path: /cctv13/hd.m3u8
 - name: IR 2 → tg@nicevpn123
   server: 217.219.212.8
   port: 420
@@ -3760,18 +3253,22 @@ proxies:
   sni: hy2-eee-1.aloranode.top
   tls: false
   type: hysteria2
-- name: 其他 024
-  type: trojan
-  network: grpc
-  server: ukvip101.qlgq.fun
-  port: 18885
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 其他 037
+  type: vmess
+  network: ws
+  server: usbk.cfip.top
+  port: 8443
+  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
+  servername: usbk.cfip.top
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: ukvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: ukvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: usbk.cfip.top
+    path: /cctv13/hd.m3u8
 - name: IR 3 → tg@nicevpn123
   server: 188.121.117.32
   port: 443
@@ -3797,18 +3294,22 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 其他 025
-  type: trojan
-  network: grpc
-  server: klvip101.qlgq.fun
-  port: 10443
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 其他 038
+  type: vmess
+  network: ws
+  server: US-Los_Angeles-A.cfip.top
+  port: 8443
+  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
+  servername: us-los_angeles-a.cfip.top
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: klvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: klvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us-los_angeles-a.cfip.top
+    path: /cctv13/hd.m3u8
 - name: IR 4 → tg@nicevpn123
   server: 195.238.126.84
   port: 9039
@@ -3833,18 +3334,22 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 其他 026
-  type: trojan
-  network: grpc
-  server: klvip101.qlgq.fun
-  port: 20443
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 其他 039
+  type: vmess
+  network: ws
+  server: US-Los_Angeles-B.cfip.top
+  port: 8443
+  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
+  servername: us-los_angeles-b.cfip.top
   skip-cert-verify: true
   tls: true
   udp: true
-  sni: klvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: klvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us-los_angeles-b.cfip.top
+    path: /cctv13/hd.m3u8
 - name: IR 6 → tg@nicevpn123
   server: 178.239.150.170
   port: 80
@@ -3872,18 +3377,21 @@ proxies:
   sni: panel.autonetshop.ir
   tls: false
   type: hysteria2
-- name: 其他 027
-  type: trojan
-  network: grpc
-  server: klvip101.qlgq.fun
-  port: 30443
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 其他 040
+  type: vmess
+  network: ws
+  server: htsub-2024.899696998.xyz
+  port: 20011
+  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
   skip-cert-verify: true
-  tls: true
+  tls: false
   udp: true
-  sni: klvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: klvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: yyyt-hk-2024.mofaxw.top
+    path: /2024
 - name: IR 7 → tg@nicevpn123
   server: 31.14.123.194
   port: 53300
@@ -3911,18 +3419,20 @@ proxies:
   sni: promo.betust.net
   tls: false
   type: hysteria2
-- name: 其他 028
-  type: trojan
-  network: grpc
-  server: sgvip101.qlgq.fun
-  port: 11223
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 比利时 001
+  type: vmess
+  network: ws
+  server: 57.129.25.20
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
   tls: true
-  udp: true
-  sni: sgvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: sgvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: linkvws
 - name: IR 9 → tg@nicevpn123
   server: 31.47.45.146
   port: 26000
@@ -3950,18 +3460,20 @@ proxies:
   sni: nas.aizhzo.com
   tls: false
   type: hysteria2
-- name: 其他 029
-  type: trojan
-  network: grpc
-  server: sgvip101.qlgq.fun
-  port: 21223
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 032
+  type: vmess
+  network: ws
+  server: 134.195.198.92
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
   tls: true
-  udp: true
-  sni: sgvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: sgvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 134.195.198.92
+    path: linkvws
 - name: IT 1 → tg@nicevpn123
   server: 188.114.98.20
   port: 8443
@@ -3990,18 +3502,20 @@ proxies:
   sni: germany.cloudhouse1.ru
   tls: false
   type: hysteria2
-- name: 其他 030
-  type: trojan
-  network: grpc
-  server: sgvip101.qlgq.fun
-  port: 31223
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 其他 041
+  type: vmess
+  network: ws
+  server: c.jamekk.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
   tls: true
-  udp: true
-  sni: sgvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: sgvip101
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: c.jamekk.org
+    path: linkvws
 - name: IT 10 → tg@nicevpn123
   server: 212.102.47.198
   port: 443
@@ -4026,18 +3540,20 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 其他 031
-  type: trojan
-  network: grpc
-  server: sgvip101.qlgq.fun
-  port: 41223
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 033
+  type: vmess
+  network: ws
+  server: 104.19.45.50
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: sgvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: sgvip101
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
 - name: IT 11 → tg@nicevpn123
   server: 188.114.99.0
   port: 8443
@@ -4069,18 +3585,20 @@ proxies:
   sni: hy2.aspidnet.xyz
   tls: false
   type: hysteria2
-- name: 其他 032
-  type: trojan
-  network: grpc
-  server: sgvip101.qlgq.fun
-  port: 51223
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 034
+  type: vmess
+  network: ws
+  server: 172.64.167.5
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: sgvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: sgvip101
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
 - name: IT 12 → tg@nicevpn123
   server: 188.114.96.15
   port: 443
@@ -4113,30 +3631,27 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 其他 033
-  type: trojan
-  network: grpc
-  server: lavip101.qlgq.fun
-  port: 11156
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: lavip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip101
-- name: IT 13 → tg@nicevpn123
-  server: 188.114.97.1
-  port: 443
+- name: 美国 035
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
   network: ws
+  server: 172.64.167.35
+  port: 2095
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
   ws-opts:
-    path: linkvws
+    headers:
+      Host: ip21.6016725.xyz
+    path: /github.com/Alvin9999
+- name: IT 14 → tg@nicevpn123
+  server: 188.114.98.0
+  port: 443
+  type: trojan
+  password: 01596265-168b-46a7-bcb7-25662c7a9546
+  sni: hdfy7c1.foriran2.eu.org
+  skip-cert-verify: true
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -4162,25 +3677,26 @@ proxies:
   sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 其他 034
-  type: trojan
-  network: grpc
-  server: lavip101.qlgq.fun
-  port: 21156
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 036
+  type: vmess
+  network: ws
+  server: 172.64.166.8
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: lavip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip101
-- name: IT 14 → tg@nicevpn123
-  server: 188.114.98.0
-  port: 443
-  type: trojan
-  password: 01596265-168b-46a7-bcb7-25662c7a9546
-  sni: hdfy7c1.foriran2.eu.org
-  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 15 → tg@nicevpn123
+  server: 176.105.252.178
+  port: 998
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cg0KkMjbGdJEh
   udp: true
 - name: vless-1884771865
   network: ws
@@ -4206,24 +3722,34 @@ proxies:
   uuid: 399049fd-9cd6-4425-8114-6ea2f5040fe4
   ws-opts:
     path: /
-- name: 其他 035
-  type: trojan
-  network: grpc
-  server: lavip101.qlgq.fun
-  port: 31156
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 037
+  type: vmess
+  network: ws
+  server: 104.19.21.63
+  port: 2095
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip21.6016725.xyz
+    path: /github.com/Alvin9999
+- name: IT 16 → tg@nicevpn123
+  server: 188.114.97.3
+  port: 443
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  alterId: 0
+  cipher: auto
   tls: true
-  udp: true
-  sni: lavip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip101
-- name: IT 15 → tg@nicevpn123
-  server: 176.105.252.178
-  port: 998
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cg0KkMjbGdJEh
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: afrhms16v.bestxray.buzz
   udp: true
 - name: vless-1939847007
   network: ws
@@ -4245,32 +3771,32 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
-- name: 其他 036
-  type: trojan
-  network: grpc
-  server: lavip102.qlgq.fun
-  port: 49643
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: lavip102.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip102
-- name: IT 16 → tg@nicevpn123
-  server: 188.114.97.3
-  port: 443
+- name: 美国 038
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  network: ws
+  server: 104.19.55.49
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip27.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 17 → tg@nicevpn123
+  server: 188.114.96.65
+  port: 8443
+  type: vmess
+  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /linkws
-    headers:
-      Host: afrhms16v.bestxray.buzz
+    path: /
   udp: true
 - name: vless-1941532350
   network: ws
@@ -4293,30 +3819,32 @@ proxies:
     headers:
       Host: 95.128.71.79
     path: /vless
-- name: 其他 037
-  type: trojan
-  network: grpc
-  server: lavip102.qlgq.fun
-  port: 20443
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: lavip102.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip102
-- name: IT 17 → tg@nicevpn123
-  server: 188.114.96.65
-  port: 8443
+- name: 美国 039
   type: vmess
-  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  network: ws
+  server: russia.com
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 19 → tg@nicevpn123
+  server: 188.114.97.2
+  port: 443
+  type: vmess
+  uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vmess
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -4346,23 +3874,25 @@ proxies:
     headers:
       Host: rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV
     path: /?ed=2560fp=unsafe
-- name: 其他 038
-  type: trojan
-  network: grpc
-  server: lavip102.qlgq.fun
-  port: 30443
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 040
+  type: vmess
+  network: ws
+  server: 172.64.167.10
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: lavip102.qlgq.fun
-  grpc-opts:
-    grpc-service-name: lavip102
-- name: IT 19 → tg@nicevpn123
-  server: 188.114.97.2
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 2 → tg@nicevpn123
+  server: 188.114.97.53
   port: 443
   type: vmess
-  uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca
+  uuid: 8c929251-406f-4b32-9173-07ccd242cb58
   alterId: 0
   cipher: auto
   tls: true
@@ -4400,30 +3930,26 @@ proxies:
     headers:
       Host: party-5cn.pages.dev
     path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-- name: 其他 039
-  type: trojan
-  network: grpc
-  server: hkvip101.qlgq.fun
-  port: 12249
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip101
-- name: IT 2 → tg@nicevpn123
-  server: 188.114.97.53
-  port: 443
+- name: 美国 041
   type: vmess
-  uuid: 8c929251-406f-4b32-9173-07ccd242cb58
+  network: ws
+  server: 104.20.17.186
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /vmess
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 20 → tg@nicevpn123
+  server: 185.230.245.213
+  port: 2377
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
@@ -4451,24 +3977,32 @@ proxies:
     headers:
       Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
     path: /?ed=2560fp=chrome
-- name: 其他 040
-  type: trojan
-  network: grpc
-  server: hkvip101.qlgq.fun
-  port: 22249
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 042
+  type: vmess
+  network: ws
+  server: 104.19.42.49
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 22 → tg@nicevpn123
+  server: 188.114.98.224
+  port: 8443
+  type: vmess
+  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  alterId: 0
+  cipher: auto
   tls: true
-  udp: true
-  sni: hkvip101.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip101
-- name: IT 20 → tg@nicevpn123
-  server: 185.230.245.213
-  port: 2377
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /build
   udp: true
 - name: vless-1944434951
   network: ws
@@ -4493,30 +4027,32 @@ proxies:
     headers:
       Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
     path: /
-- name: 其他 041
-  type: trojan
-  network: grpc
-  server: hkvip102.qlgq.fun
-  port: 32249
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip102.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip102
-- name: IT 22 → tg@nicevpn123
-  server: 188.114.98.224
-  port: 8443
+- name: 美国 043
   type: vmess
-  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  network: ws
+  server: 172.64.99.22
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 23 → tg@nicevpn123
+  server: 188.114.97.7
+  port: 443
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /build
+    path: /linkws
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -4545,30 +4081,33 @@ proxies:
     headers:
       Host: tn1r.eu.cc
     path: /id-pusat
-- name: 其他 042
-  type: trojan
-  network: grpc
-  server: hkvip102.qlgq.fun
-  port: 42249
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip102.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip102
-- name: IT 23 → tg@nicevpn123
-  server: 188.114.97.7
-  port: 443
+- name: 美国 044
   type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  network: ws
+  server: 172.64.167.35
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 25 → tg@nicevpn123
+  server: 188.114.96.2
+  port: 2087
+  type: vmess
+  uuid: 8c65cbad-923d-4f73-c653-83c75ca4e1aa
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /linkws
+  network: grpc
+  servername: ''
+  grpc-opts:
+    grpc-service-name: /
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -4597,31 +4136,34 @@ proxies:
     headers:
       Host: ir2.cryptojakiro.com
     path: /
-- name: 其他 043
-  type: trojan
-  network: grpc
-  server: hkvip103.qlgq.fun
-  port: 52249
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip103.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip103
-- name: IT 25 → tg@nicevpn123
-  server: 188.114.96.2
-  port: 2087
+- name: 美国 045
   type: vmess
-  uuid: 8c65cbad-923d-4f73-c653-83c75ca4e1aa
+  network: ws
+  server: 172.64.175.213
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 28 → tg@nicevpn123
+  server: 855.outline-vpn.cloud
+  port: 443
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  network: grpc
-  servername: ''
-  grpc-opts:
-    grpc-service-name: /
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: afrhms16v.bestxray.buzz
   udp: true
 - name: vless-1935807325
   network: ws
@@ -4641,32 +4183,33 @@ proxies:
   tls: true
   type: vless
   uuid: baded307-189c-4ffc-a271-9acdab51a324
-- name: 其他 044
-  type: trojan
-  network: grpc
-  server: hkvip103.qlgq.fun
-  port: 11116
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 046
+  type: vmess
+  network: ws
+  server: 162.159.140.45
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip103.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip103
-- name: IT 28 → tg@nicevpn123
-  server: 855.outline-vpn.cloud
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 31 → tg@nicevpn123
+  server: 188.114.96.6
   port: 443
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /linkws
-    headers:
-      Host: afrhms16v.bestxray.buzz
+  network: grpc
+  servername: ''
+  grpc-opts:
+    grpc-service-name: /
   udp: true
 - client-fingerprint: random
   name: vless-1885939693
@@ -4687,31 +4230,32 @@ proxies:
   tls: false
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- name: 其他 045
-  type: trojan
-  network: grpc
-  server: hkvip104.qlgq.fun
-  port: 45136
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip104.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip104
-- name: IT 31 → tg@nicevpn123
-  server: 188.114.96.6
-  port: 443
+- name: 美国 047
   type: vmess
-  uuid: 5b0a489e-e9eb-41b1-902e-d4acad667ba6
+  network: ws
+  server: singapore.com
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
   alterId: 0
   cipher: auto
-  tls: true
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 5 → tg@nicevpn123
+  server: 188.114.98.0
+  port: 2086
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
-  network: grpc
-  servername: ''
-  grpc-opts:
-    grpc-service-name: /
+  network: ws
+  ws-opts:
+    path: /
   udp: true
 - client-fingerprint: chrome
   name: vless-1888152403
@@ -4737,30 +4281,27 @@ proxies:
   tls: true
   type: vless
   uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
-- name: 其他 046
-  type: trojan
-  network: grpc
-  server: hkvip104.qlgq.fun
-  port: 46216
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip104.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip104
-- name: IT 5 → tg@nicevpn123
-  server: 188.114.98.0
-  port: 2086
+- name: 美国 048
   type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  network: ws
+  server: 172.64.166.20
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 6 → tg@nicevpn123
+  server: 188.114.96.3
+  port: 2083
+  type: trojan
+  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
+  sni: majidrezarahnavard.pardazesh.tech
+  skip-cert-verify: true
   udp: true
 - name: vless-1927185301
   network: ws
@@ -4778,25 +4319,34 @@ proxies:
   tls: false
   type: vless
   uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 其他 047
-  type: trojan
-  network: grpc
-  server: hkvip105.qlgq.fun
-  port: 41116
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
+- name: 美国 049
+  type: vmess
+  network: ws
+  server: 104.26.5.67
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: IT 9 → tg@nicevpn123
+  server: 188.114.97.3
+  port: 443
+  type: vmess
+  uuid: c875aa67-e59f-4147-89c8-c0bf7b0e12bf
+  alterId: 0
+  cipher: auto
   tls: true
-  udp: true
-  sni: hkvip105.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip105
-- name: IT 6 → tg@nicevpn123
-  server: 188.114.96.3
-  port: 2083
-  type: trojan
-  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
-  sni: majidrezarahnavard.pardazesh.tech
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: nl1-vmess.sshmax.xyz
   udp: true
 - alterId: 0
   cipher: auto
@@ -4821,32 +4371,26 @@ proxies:
     headers:
       Host: vless2-8vx.pages.dev
     path: /fp=chrome
-- name: 其他 048
-  type: trojan
-  network: grpc
-  server: hkvip105.qlgq.fun
-  port: 51116
-  password: 3c668456-cc9c-3392-9014-0f73e5a09bb3
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  sni: hkvip105.qlgq.fun
-  grpc-opts:
-    grpc-service-name: hkvip105
-- name: IT 9 → tg@nicevpn123
-  server: 188.114.97.3
-  port: 443
+- name: 美国 050
   type: vmess
-  uuid: c875aa67-e59f-4147-89c8-c0bf7b0e12bf
+  network: ws
+  server: 104.19.45.90
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  skip-cert-verify: true
+  tls: false
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
   ws-opts:
-    path: /vmess
     headers:
-      Host: nl1-vmess.sshmax.xyz
+      Host: ip27.6929198.xyz
+    path: github.com/Alvin9999
+- name: KE 1 → tg@nicevpn123
+  server: 62.12.116.66
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
@@ -4870,28 +4414,26 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- name: 澳大利亚 001
+- name: 美国 051
   type: vmess
   network: ws
-  server: 1.1.1.1
-  port: 443
-  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
-  servername: usbk.cfip.top
+  server: malaysia.com
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: usbk.cfip.top
-    path: /cctv13/hd.m3u8
-- name: KE 1 → tg@nicevpn123
-  server: 62.12.116.66
-  port: 989
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- name: KZ 1 → tg@nicevpn123
+  server: kz.telegavpn.com
+  port: 35152
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+  password: xMKLvlWSdX3u73nH786k6r
   udp: true
 - alterId: 0
   cipher: auto
@@ -4916,28 +4458,26 @@ proxies:
     headers:
       Host: fraboijji.global.ssl.fastly.net.
     path: /
-- name: 其他 049
+- name: 美国 052
   type: vmess
   network: ws
-  server: usbk.cfip.top
-  port: 8443
-  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
-  servername: usbk.cfip.top
+  server: www.visa.com
+  port: 2082
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   skip-cert-verify: true
-  tls: true
-  udp: true
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: usbk.cfip.top
-    path: /cctv13/hd.m3u8
-- name: KZ 1 → tg@nicevpn123
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- name: KZ 2 → tg@nicevpn123
   server: kz.telegavpn.com
   port: 35152
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: xMKLvlWSdX3u73nH786k6r
+  password: XyM5x6p4CJ8dlb0y9mVHBK
   udp: true
 - alterId: 0
   cipher: auto
@@ -4960,28 +4500,26 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
     path: /vless/
-- name: 其他 050
+- name: 美国 053
   type: vmess
   network: ws
-  server: US-Los_Angeles-A.cfip.top
-  port: 8443
-  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
-  servername: us-los_angeles-a.cfip.top
+  server: 104.19.45.42
+  port: 2095
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   skip-cert-verify: true
-  tls: true
-  udp: true
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: us-los_angeles-a.cfip.top
-    path: /cctv13/hd.m3u8
-- name: KZ 2 → tg@nicevpn123
-  server: kz.telegavpn.com
+      Host: ip21.6016725.xyz
+    path: /github.com/Alvin9999
+- name: KZ 3 → tg@nicevpn123
+  server: 188.94.155.82
   port: 35152
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: XyM5x6p4CJ8dlb0y9mVHBK
+  password: EBxFSacCME71CQSjiOyJ3J
   udp: true
 - name: hysteria2-1828373437
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -5004,28 +4542,32 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
-- name: 其他 051
+- name: 美国 054
   type: vmess
   network: ws
-  server: US-Los_Angeles-B.cfip.top
-  port: 8443
-  uuid: 36f71b02-04bf-4ab6-8f17-850a002b448d
-  servername: us-los_angeles-b.cfip.top
+  server: 104.21.238.100
+  port: 2095
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   skip-cert-verify: true
-  tls: true
-  udp: true
+  tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: us-los_angeles-b.cfip.top
-    path: /cctv13/hd.m3u8
-- name: KZ 3 → tg@nicevpn123
-  server: 188.94.155.82
-  port: 35152
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: EBxFSacCME71CQSjiOyJ3J
+      Host: ip21.6016725.xyz
+    path: /github.com/Alvin9999
+- name: LT 1 → tg@nicevpn123
+  server: 91.149.236.44
+  port: 26639
+  type: vmess
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13/hd.m3u8/
   udp: true
 - name: hysteria2-1828371613
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -5048,33 +4590,26 @@ proxies:
     headers:
       Host: 52z4vtewuass.game4090taking.workers.dev
     path: /stream/PANEL_ZEUS/47be357e54da/loc-0
-- name: 其他 052
+- name: 比利时 002
   type: vmess
   network: ws
-  server: htsub-2024.899696998.xyz
-  port: 20011
-  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  server: 57.129.24.142
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
-  tls: false
-  udp: true
+  tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: yyyt-hk-2024.mofaxw.top
-    path: /2024
-- name: LT 1 → tg@nicevpn123
-  server: 91.149.236.44
-  port: 26639
-  type: vmess
-  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13/hd.m3u8/
+      Host: 57.129.24.142
+    path: /linkvws
+- name: LT 2 → tg@nicevpn123
+  server: 46.183.184.61
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - name: hysteria2-1853501557
   password: b0917015b656b3dd2286b5633af0c5c1
@@ -5096,10 +4631,10 @@ proxies:
     headers:
       Host: ukoijji.global.ssl.fastly.net
     path: /
-- name: 比利时 003
+- name: 美国 055
   type: vmess
   network: ws
-  server: 57.129.25.20
+  server: 23.162.200.227
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
@@ -5108,10 +4643,10 @@ proxies:
   cipher: auto
   ws-opts:
     headers:
-      Host: 57.129.25.20
-    path: linkvws
-- name: LT 2 → tg@nicevpn123
-  server: 46.183.184.61
+      Host: 23.162.200.227
+    path: /linkvws
+- name: LT 3 → tg@nicevpn123
+  server: 46.183.184.60
   port: 989
   type: ss
   cipher: aes-256-cfb
@@ -5136,22 +4671,17 @@ proxies:
   uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
   ws-opts:
     path: /GunService
-- name: 美国 070
-  type: vmess
-  network: ws
-  server: 134.195.198.92
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 加拿大 003
+  type: trojan
+  network: tcp
+  server: 52.60.59.39
+  port: 22222
+  password: telegram-id-directvpn
   skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 134.195.198.92
-    path: linkvws
-- name: LT 3 → tg@nicevpn123
-  server: 46.183.184.60
+  udp: true
+  sni: trojan.burgerip.co.uk
+- name: LT 4 → tg@nicevpn123
+  server: 46.183.184.62
   port: 989
   type: ss
   cipher: aes-256-cfb
@@ -5171,22 +4701,17 @@ proxies:
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-- name: 其他 053
-  type: vmess
-  network: ws
-  server: c.jamekk.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 其他 042
+  type: trojan
+  network: tcp
+  server: ent1.imyourdaddy.top
+  port: 20992
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: c.jamekk.org
-    path: linkvws
-- name: LT 4 → tg@nicevpn123
-  server: 46.183.184.62
+  udp: true
+  sni: sale.alibaba.com
+- name: LU 1 → tg@nicevpn123
+  server: 92.38.163.53
   port: 989
   type: ss
   cipher: aes-256-cfb
@@ -5210,26 +4735,26 @@ proxies:
     headers:
       Host: google.com
     path: /vless/
-- name: 美国 071
+- name: 其他 043
   type: vmess
   network: ws
-  server: 104.19.45.50
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  server: discord.vpnsell.beauty
+  port: 443
+  uuid: 57529232-b316-4b4e-abf1-9b6063ba0316
   skip-cert-verify: true
-  tls: false
+  tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- name: LU 1 → tg@nicevpn123
-  server: 92.38.163.53
-  port: 989
+      Host: discord.vpnsell.beauty
+    path: /29516/iliya
+- name: LU 2 → tg@nicevpn123
+  server: 5.8.41.89
+  port: 8388
   type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  cipher: chacha20-ietf-poly1305
+  password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f
   udp: true
 - cipher: aes-128-gcm
   name: shadowsocks-1827146375
@@ -5251,26 +4776,20 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
-- name: 美国 072
-  type: vmess
-  network: ws
-  server: 172.64.167.5
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 英国 001
+  type: trojan
+  network: tcp
+  server: 35.177.201.76
+  port: 22222
+  password: telegram-id-privatevpns
   skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- name: LU 2 → tg@nicevpn123
-  server: 5.8.41.89
-  port: 8388
+  udp: true
+- name: LV 1 → tg@nicevpn123
+  server: 46.183.217.232
+  port: 989
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 - cipher: aes-128-gcm
   name: shadowsocks-1827146051
@@ -5291,26 +4810,26 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- name: 美国 073
+- name: 日本 001
   type: vmess
   network: ws
-  server: 172.64.167.35
-  port: 2095
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  server: 92.38.178.93
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
-  tls: false
+  tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ip21.6016725.xyz
-    path: /github.com/Alvin9999
-- name: LV 1 → tg@nicevpn123
-  server: 46.183.217.232
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+      Host: 92.38.178.93
+    path: linkvws
+- name: LV 2 → tg@nicevpn123
+  server: ua-full.privateip.net
+  port: 443
+  type: trojan
+  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
+  skip-cert-verify: true
   udp: true
 - cipher: aes-256-gcm
   name: shadowsocks-1875023024
@@ -5332,22 +4851,17 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- name: 美国 074
-  type: vmess
-  network: ws
-  server: 172.64.166.8
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 其他 044
+  type: trojan
+  network: tcp
+  server: plowman.meijireform.com
+  port: 443
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
   skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- name: LV 2 → tg@nicevpn123
-  server: ua-full.privateip.net
+  udp: true
+  sni: plowman.meijireform.com
+- name: LV 3 → tg@nicevpn123
+  server: 195.123.213.46
   port: 443
   type: trojan
   password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
@@ -5374,26 +4888,337 @@ proxies:
     headers:
       Host: decdn-28.nome-rkp.net
     path: /media/ws/
-- name: 美国 075
+- name: 美国 056
+  type: trojan
+  network: tcp
+  server: 154.31.114.10
+  port: 443
+  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+  skip-cert-verify: true
+  udp: true
+  sni: plowman.meijireform.com
+- name: LV 4 → tg@nicevpn123
+  server: ua-full.privateip.net
+  port: 443
+  type: vmess
+  uuid: 7a7d1976-87dd-44b1-b290-b815770bff35
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /RACEVPN
+    headers:
+      Host: ua-full.privateip.net
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1827147481
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.164.175.81
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
+  network: ws
+  port: 443
+  server: 13.140.253.35
+  servername: xray-bprkdwje-clever-comet-4.cloady.io
+  tls: true
+  type: vless
+  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  ws-opts:
+    headers:
+      Host: xray-bprkdwje-clever-comet-4.cloady.io
+    path: /27dbf143acdd7bca
+- name: 其他 045
+  type: trojan
+  network: tcp
+  server: n3.jp4589871.top
+  port: 8443
+  password: d90e5504-a42b-44c1-8289-3543471bf55a
+  skip-cert-verify: true
+  udp: true
+  sni: n3.jp4589871.top
+- name: LV 5 → tg@nicevpn123
+  server: ua-full.privateip.net
+  port: 443
+  type: trojan
+  password: 6fd1efa0-b559-48ce-81f9-56d1765f5ab5
+  skip-cert-verify: true
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146176
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.151
+  type: ss
+  udp: true
+- client-fingerprint: unsafe
+  encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  network: ws
+  port: 443
+  server: 45.153.245.181
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: 俄罗斯 001
   type: vmess
   network: ws
-  server: 104.19.21.63
-  port: 2095
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  server: socks5tobefree.ydns.eu
+  port: 33026
+  uuid: 06053cbe-a299-4934-bca6-0707e1416dc7
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: socks5tobefree.ydns.eu
+    path: /dangerzone
+- name: MD 1 → tg@nicevpn123
+  server: 178.175.134.2
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146367
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.39
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+  network: ws
+  port: 443
+  server: 46.250.248.210
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+- name: 美国 057
+  type: trojan
+  network: tcp
+  server: aafrtpfxr.jpl01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  port: 27001
+  password: f181b265-5fd4-456e-ad2d-c9b0446e0d51
+  skip-cert-verify: true
+  udp: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+- name: MD 2 → tg@nicevpn123
+  server: 192.121.87.147
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146475
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇰🇷[www.v2nodes.com] vless-KR-3... #1'
+  network: ws
+  port: 8443
+  server: 64.110.79.66
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+- name: 其他 046
+  type: vmess
+  network: ws
+  server: bs.yichueng.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: bs.yichueng.org
+    path: linkvws
+- name: MO 1 → tg@nicevpn123
+  server: 45.64.22.55
+  port: 443
+  type: trojan
+  password: KLF0qOU0ZZGw5Tnu
+  sni: swift.protocolbuffer.com
+  skip-cert-verify: true
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146148
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🏳[www.v2nodes.com] vless- #9'
+  network: ws
+  port: 8443
+  server: 3h-kazakhstan1.09vpn.com
+  servername: 3h-kazakhstan1.09vpn.com
+  tls: true
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  ws-opts:
+    path: /vless/
+- name: 其他 047
+  type: vmess
+  network: ws
+  server: us-new03.daluquan.top
+  port: 8880
+  uuid: 25bb1d6d-68e6-41a3-85e8-b280ac3f39eb
   skip-cert-verify: true
   tls: false
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: ip21.6016725.xyz
-    path: /github.com/Alvin9999
-- name: LV 3 → tg@nicevpn123
-  server: 195.123.213.46
+      Host: us-new03.daluquan.top
+    path: /itdog?ed=2560
+- name: MO 2 → tg@nicevpn123
+  server: 45.64.22.55
   port: 443
   type: trojan
-  password: 1a57ce8f-a4dd-474a-b00f-2f907290db90
+  password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR
+  sni: flowery.meijireform.com
   skip-cert-verify: true
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1828227588
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 79.110.53.169
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇲🇾[www.v2nodes.com] vless-MY-1...
+  network: ws
+  port: 443
+  server: 382218.xyz
+  servername: 382218.xyz
+  tls: true
+  type: vless
+  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
+  ws-opts:
+    headers:
+      Host: 382218.xyz
+    path: /ws
+- name: 美国 058
+  type: trojan
+  network: tcp
+  server: h.522226.xyz
+  port: 45800
+  password: xjN4xcuPGg55
+  skip-cert-verify: true
+  udp: true
+- name: MO 3 → tg@nicevpn123
+  server: 45.64.22.55
+  port: 443
+  type: trojan
+  password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
+  sni: csharp.protocolbuffer.com
+  skip-cert-verify: true
+  udp: true
+- name: trojan-1946055073
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #6'
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  ws-opts:
+    headers:
+      Host: netherboijji.global.ssl.fastly.net.
+    path: /
+- name: 美国 059
+  type: trojan
+  network: tcp
+  server: f.522226.xyz
+  port: 45601
+  password: xjN4xcuPGg
+  skip-cert-verify: true
+  udp: true
+- name: MO 4 → tg@nicevpn123
+  server: macau.hapchung.com
+  port: 10443
+  type: trojan
+  password: 5eb5bdf9-4a70-4890-b2ca-8b2b79792639
+  skip-cert-verify: true
+  udp: true
+- name: trojan-1929965354
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.114.45
+  skip-cert-verify: false
+  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+  network: tcp
+  port: 443
+  server: 194.60.228.97
+  servername: base.hosamobenl.co.uk
+  tls: true
+  type: vless
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+- name: 其他 048
+  type: vmess
+  network: ws
+  server: de-new01.daluquan.top
+  port: 8080
+  uuid: 25bb1d6d-68e6-41a3-85e8-b280ac3f39eb
+  skip-cert-verify: true
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
+- name: NO 1 → tg@nicevpn123
+  server: 185.90.61.153
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
 proxy-groups:
 - name: AUTO
@@ -5403,448 +5228,446 @@ proxy-groups:
   tolerance: 50
   proxies:
   - nl|e1f5|puddincat07@Telegram
-  - 🇺🇸 United States [TG]
+  - 🇺🇸 United States/Los Angeles [GH:ripaojiedian/freenode]
   - SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   - 🇺🇸_US_美国_IPV4
   - 美国 001
-  - '🇺🇸_US_美国_IPV4 #2'
+  - 🇺🇸US_3|1.1MB/s
   - AF 1 → tg@nicevpn123
-  - 🇺🇸US_2|1.4MB/s
   - nl|b8af|puddincat07@Telegram
-  - 🇺🇸 United States/Hillsboro [GH:Surfboardv2ra]
+  - 🌍 Lithuania [TG]
   - VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   - 🇸🇬_SG_新加坡_IPV4
-  - 俄罗斯 001
-  - 🇺🇸_US_美国_IPV4 (2)
+  - 土耳其 001
+  - 🇺🇸US_5|3.1MB/s
   - AL 1 → tg@nicevpn123
-  - '🇳🇬 尼日利亚 | NGA #1'
   - nl|f92b|puddincat07@Telegram
-  - 🇳🇱 The Netherlands/Haarlem [TG]
   - VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
-  - '🇺🇸_US_美国_IPV4 (2) #2'
-  - 俄罗斯 002
-  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (2)
+  - 美国 002
+  - '🇭🇰 香港 | HKG #2'
   - AL 2 → tg@nicevpn123
-  - '🇸🇬 新加坡 | SGP #4'
   - nl|2d27|puddincat07@Telegram
-  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
   - SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
-  - '🇺🇸_US_美国_IPV4 (3) #2'
-  - 美国 004
-  - 🇺🇸_US_美国_IPV4 (4)
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 美国 003
+  - '🇸🇬 新加坡 | SGP #7'
   - AO 1 → tg@nicevpn123
-  - '🇺🇸 美国 | USA #2'
   - nl|8e6f|puddincat07@Telegram
-  - '🇳🇱 The Netherlands/Haarlem [TG] #3'
+  - 🇩🇪 Germany/Frankfurt am Main [GH:Mahdi0024/ProxyCollector]
   - SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   - 🇸🇬_SG_新加坡_IPV4 (2)
-  - 瑞士 002
-  - '🇸🇬_SG_新加坡_IPV4 #2'
+  - 美国 004
+  - '🇺🇸 美国 | USA #5'
   - AO 2 → tg@nicevpn123
-  - 🇺🇸 美国 | USA 4
   - nl|bc46|puddincat07@Telegram
-  - '🇳🇱 The Netherlands/Haarlem [TG] #4'
+  - 🇩🇪 Germany/Frankfurt am Main [TG]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   - 🇸🇬_SG_新加坡_IPV4 (3)
-  - 瑞典 002
-  - 🇯🇵_JP_日本_IPV4
+  - 美国 005
   - AR 1 → tg@nicevpn123
   - nl|6a01|puddincat07@Telegram
-  - 🇳🇱 The Netherlands/Lelystad [TG]
+  - 🇬🇧 United Kingdom/Manchester [GH:MatinGhanbari/v2ray-conf]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
   - 🇸🇬_SG_新加坡_IPV4 (4)
-  - 美国 011
-  - 🇯🇵_JP_日本_IPV4 (2)
+  - 美国 006
   - AR 2 → tg@nicevpn123
   - nl|1cc0|puddincat07@Telegram
-  - 🇳🇱 The Netherlands [TG]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
-  - '🇺🇸_US_美国_IPV4 (4) #2'
-  - 美国 013
-  - 🇯🇵_JP_日本_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (4)
+  - 其他 001
   - AR 3 → tg@nicevpn123
   - nl|468f|puddincat07@Telegram
-  - 🇺🇸 United States/Los Angeles [TG]
   - SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   - 🇺🇸_US_美国_IPV4 (5)
-  - 伊朗 001
-  - 🇯🇵_JP_日本_IPV4 (4)
+  - 美国 007
   - AR 4 → tg@nicevpn123
   - nl|5013|puddincat07@Telegram
-  - 🇺🇸 United States/Santa Clara [GH:Mahdi0024/Pro]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   - 🇺🇸_US_美国_IPV4 (6)
-  - 美国 019
-  - 🇯🇵_JP_日本_IPV4 (5)
+  - 法国 001
   - AR 5 → tg@nicevpn123
   - xx|14f5|puddincat07@Telegram
-  - 🇬🇧 United Kingdom [TG]
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   - 🇺🇸_US_美国_IPV4 (7)
-  - 美国 025
-  - 🇯🇵_JP_日本_IPV4 (6)
+  - 美国 008
   - AT 1 → tg@nicevpn123
   - nl|3eaa|puddincat07@Telegram
-  - 🇺🇸 United States/Atlanta [TG]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-92.118.112.101:9483
-  - '🇯🇵_JP_日本_IPV4 #2'
-  - 美国 026
-  - 🇯🇵_JP_日本_IPV4 (7)
+  - 🇯🇵_JP_日本_IPV4
+  - 美国 009
   - AT 2 → tg@nicevpn123
   - xx|0291|puddincat07@Telegram
-  - 🇺🇸 United States/Atlanta [GH:barry-far/V2r]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000
-  - '🇯🇵_JP_日本_IPV4 (2) #2'
-  - 乌克兰 002
-  - 🇯🇵_JP_日本_IPV4 (8)
+  - 🇯🇵_JP_日本_IPV4 (2)
+  - 美国 010
   - AT 3 → tg@nicevpn123
   - sg|9317|puddincat07@Telegram
   - shadowsocks-1827146270
-  - 🇪🇸 Spain/Madrid [TG]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
-  - '🇯🇵_JP_日本_IPV4 (3) #2'
-  - 美国 027
-  - 🇯🇵_JP_日本_IPV4 (9)
+  - 🇯🇵_JP_日本_IPV4 (3)
+  - 其他 002
   - AT 4 → tg@nicevpn123
   - us|2abc|puddincat07@Telegram
   - shadowsocks-1870576255
-  - 🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro]
   - SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
   - 🇺🇸_US_美国_IPV4 (9)
-  - 美国 028
-  - '🇺🇸_US_美国_IPV4 (6) #2'
+  - 其他 003
   - BA 1 → tg@nicevpn123
   - it|cc8d|puddincat07@Telegram
   - shadowsocks-1870576345
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #2'
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.codefyinc.com:443
   - 🇺🇸_US_美国_IPV4 (10)
-  - 美国 029
-  - 🇺🇸_US_美国_IPV4 (8)
+  - 加拿大 001
   - BE 1 → tg@nicevpn123
   - shadowsocks-1827963705
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #3'
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443
   - 🇺🇸_US_美国_IPV4 (11)
-  - 其他 012
-  - '🇺🇸_US_美国_IPV4 (10) #2'
+  - 美国 011
   - BE 2 → tg@nicevpn123
   - shadowsocks-1827962976
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #4'
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-198.23.174.168:20086
   - 🇺🇸_US_美国_IPV4 (12)
-  - 美国 034
-  - 🇯🇵_JP_日本_IPV4 (10)
+  - 美国 012
   - BE 3 → tg@nicevpn123
   - shadowsocks-1827963676
-  - 🇺🇸 United States/Atlanta [GH:Mahdi0024/Pro]
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
   - 🇺🇸_US_美国_IPV4 (13)
-  - 美国 035
-  - '🇺🇸_US_美国_IPV4 (13) #2'
+  - 美国 013
   - BE 4 → tg@nicevpn123
   - shadowsocks-1827969041
-  - 🇺🇸 United States/Washington [GH:Mahdi0024/Pro]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443
   - 🇺🇸_US_美国_IPV4 (14)
-  - 法国 001
+  - 美国 014
   - BE 5 → tg@nicevpn123
   - shadowsocks-1827146549
   - VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080
   - 🇺🇸_US_美国_IPV4 (15)
-  - 美国 036
+  - 美国 015
   - BG 1 → tg@nicevpn123
   - shadowsocks-1827146742
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.84.189:443
   - 🇺🇸_US_美国_IPV4 (16)
-  - 比利时 002
+  - 罗马尼亚 001
   - BG 10 → tg@nicevpn123
   - shadowsocks-1827146667
   - VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443
   - 🇺🇸_US_美国_IPV4 (17)
-  - 美国 037
+  - 美国 016
   - BG 11 → tg@nicevpn123
   - shadowsocks-1827146815
   - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083
-  - 日本 002
+  - 美国 017
   - BG 12 → tg@nicevpn123
   - shadowsocks-1827147187
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.87.207:10011
   - 🇩🇪_DE_德国_IPV4
-  - 日本 003
+  - 其他 004
   - BG 13 → tg@nicevpn123
   - shadowsocks-1827964140
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443
-  - 美国 038
+  - 美国 018
   - BG 14 → tg@nicevpn123
   - shadowsocks-1875023016
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443
   - 🇳🇱_NL_荷兰_IPV4
-  - 美国 039
+  - 中国 001
   - BG 15 → tg@nicevpn123
   - shadowsocks-1827146083
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443
   - 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
-  - 土耳其 001
+  - 中国 002
   - BG 16 → tg@nicevpn123
   - shadowsocks-1827146769
-  - '🇯🇵_JP_日本_IPV4 (4) #2'
-  - 美国 040
+  - 🇯🇵_JP_日本_IPV4 (4)
+  - 美国 019
   - BG 17 → tg@nicevpn123
   - shadowsocks-1827146486
   - 防范境外势力渗透
-  - 美国 041
+  - 美国 020
   - BG 18 → tg@nicevpn123
   - shadowsocks-1827145981
   - '防范境外势力渗透 #1'
-  - 美国 042
+  - 美国 021
   - BG 19 → tg@nicevpn123
   - shadowsocks-1827145964
   - '防范境外势力渗透 #2'
-  - 美国 043
+  - 美国 022
   - BG 3 → tg@nicevpn123
   - shadowsocks-1827146086
   - '防范境外势力渗透 #3'
-  - 美国 044
+  - 乌克兰 001
   - BG 5 → tg@nicevpn123
   - shadowsocks-1827146026
   - '防范境外势力渗透 #4'
-  - 其他 013
+  - 美国 023
   - BG 7 → tg@nicevpn123
   - shadowsocks-1827147777
   - '防范境外势力渗透 #5'
-  - 美国 045
+  - 其他 007
   - BR 1 → tg@nicevpn123
   - trojan-1939846065
   - '防范境外势力渗透 #6'
-  - 法国 002
+  - 其他 008
   - CH 1 → tg@nicevpn123
   - trojan-1827188340
   - '防范境外势力渗透 #7'
-  - 美国 046
+  - 其他 009
   - CH 2 → tg@nicevpn123
   - vless-1884061323
   - '防范境外势力渗透 #8'
-  - 美国 047
+  - 其他 010
   - CH 3 → tg@nicevpn123
   - vless-1943752974
   - '防范境外势力渗透 #9'
-  - 美国 048
+  - 其他 011
   - CH 4 → tg@nicevpn123
   - vmess-1837386984
   - https://github.com/*********-*...
-  - 其他 014
+  - 其他 012
   - CH 5 → tg@nicevpn123
   - vmess-1853342713
   - 'github.com/*********-******/**... #1'
-  - 其他 015
+  - 其他 013
   - CY 1 → tg@nicevpn123
   - vmess-1853348092
-  - 加拿大 001
+  - 其他 014
   - EC 1 → tg@nicevpn123
-  - 美国 049
+  - 其他 015
   - FI 1 → tg@nicevpn123
   - shadowsocks-1827146287
-  - 美国 050
+  - 其他 016
   - FI 2 → tg@nicevpn123
   - shadowsocks-1827146197
-  - 美国 051
+  - 其他 017
   - IE 1 → tg@nicevpn123
   - shadowsocks-1827146224
-  - 美国 052
+  - 其他 018
   - IE 10 → tg@nicevpn123
   - shadowsocks-1827146248
-  - 美国 053
+  - 其他 019
   - IE 11 → tg@nicevpn123
   - shadowsocks-1875023013
-  - 罗马尼亚 001
+  - 其他 020
   - IE 2 → tg@nicevpn123
   - shadowsocks-1830344687
-  - 美国 054
+  - 其他 021
   - IE 3 → tg@nicevpn123
   - trojan-1932509804
-  - 美国 055
+  - 其他 022
   - IE 4 → tg@nicevpn123
   - vless-1827151410
-  - 其他 016
+  - 其他 023
   - IE 5 → tg@nicevpn123
   - vless-1931998094
-  - 美国 056
+  - 其他 024
   - IE 6 → tg@nicevpn123
   - vless-1943482613
-  - 中国 004
+  - 其他 025
   - IE 7 → tg@nicevpn123
   - vless-1929914559
-  - 中国 005
+  - 其他 026
   - IE 8 → tg@nicevpn123
   - vless-1832754815
-  - 美国 057
+  - 其他 027
   - IE 9 → tg@nicevpn123
   - vless-1883568710
-  - 美国 058
+  - 其他 028
   - IL 1 → tg@nicevpn123
   - vless-1898602719
-  - 美国 059
+  - 其他 029
   - IL 2 → tg@nicevpn123
   - vless-1851981829
-  - 美国 060
+  - 其他 030
   - IL 3 → tg@nicevpn123
   - vmess-1827158757
-  - 乌克兰 003
+  - 其他 031
   - IM 1 → tg@nicevpn123
   - vmess-1853348260
-  - 美国 061
+  - 其他 032
   - IM 2 → tg@nicevpn123
   - vmess-1828338235
-  - 其他 019
+  - 其他 033
   - IM 3 → tg@nicevpn123
-  - 其他 020
+  - 其他 034
   - IR 1 → tg@nicevpn123
-  - 其他 021
+  - 其他 035
   - IR 10 → tg@nicevpn123
   - shadowsocks-1827146336
-  - 其他 022
+  - 其他 036
   - IR 11 → tg@nicevpn123
   - shadowsocks-1828226964
-  - 其他 023
+  - 澳大利亚 001
   - IR 2 → tg@nicevpn123
   - shadowsocks-1827146556
-  - 其他 024
+  - 其他 037
   - IR 3 → tg@nicevpn123
   - shadowsocks-1827146122
-  - 其他 025
+  - 其他 038
   - IR 4 → tg@nicevpn123
   - shadowsocks-1827147479
-  - 其他 026
+  - 其他 039
   - IR 6 → tg@nicevpn123
   - shadowsocks-1875022941
-  - 其他 027
+  - 其他 040
   - IR 7 → tg@nicevpn123
   - shadowsocks-1827146619
-  - 其他 028
+  - 比利时 001
   - IR 9 → tg@nicevpn123
   - shadowsocks-1827145971
-  - 其他 029
+  - 美国 032
   - IT 1 → tg@nicevpn123
   - trojan-1827149654
-  - 其他 030
+  - 其他 041
   - IT 10 → tg@nicevpn123
   - trojan-1939846054
-  - 其他 031
+  - 美国 033
   - IT 11 → tg@nicevpn123
   - trojan-1849374991
-  - 其他 032
+  - 美国 034
   - IT 12 → tg@nicevpn123
   - trojan-1946595155
-  - 其他 033
-  - IT 13 → tg@nicevpn123
-  - vless-1832754572
-  - 其他 034
+  - 美国 035
   - IT 14 → tg@nicevpn123
+  - vless-1832754572
+  - 美国 036
+  - IT 15 → tg@nicevpn123
   - vless-1884771865
   - 🇦🇹[www.v2nodes.com] vless-AT-1...
-  - 其他 035
-  - IT 15 → tg@nicevpn123
+  - 美国 037
+  - IT 16 → tg@nicevpn123
   - vless-1939847007
   - 🇦🇺[www.v2nodes.com] vless-AU-1...
-  - 其他 036
-  - IT 16 → tg@nicevpn123
+  - 美国 038
+  - IT 17 → tg@nicevpn123
   - vless-1941532350
   - '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
-  - 其他 037
-  - IT 17 → tg@nicevpn123
+  - 美国 039
+  - IT 19 → tg@nicevpn123
   - vless-1828372435
   - 🇨🇦[www.v2nodes.com] vless-CA-1...
-  - 其他 038
-  - IT 19 → tg@nicevpn123
+  - 美国 040
+  - IT 2 → tg@nicevpn123
   - vless-1929913739
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-  - 其他 039
-  - IT 2 → tg@nicevpn123
+  - 美国 041
+  - IT 20 → tg@nicevpn123
   - vless-1832754691
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
-  - 其他 040
-  - IT 20 → tg@nicevpn123
+  - 美国 042
+  - IT 22 → tg@nicevpn123
   - vless-1944434951
   - '🏳[www.v2nodes.com] vless- #17'
-  - 其他 041
-  - IT 22 → tg@nicevpn123
+  - 美国 043
+  - IT 23 → tg@nicevpn123
   - vless-1827153139
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #4'
-  - 其他 042
-  - IT 23 → tg@nicevpn123
+  - 美国 044
+  - IT 25 → tg@nicevpn123
   - vless-1853462714
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
-  - 其他 043
-  - IT 25 → tg@nicevpn123
+  - 美国 045
+  - IT 28 → tg@nicevpn123
   - vless-1935807325
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
-  - 其他 044
-  - IT 28 → tg@nicevpn123
+  - 美国 046
+  - IT 31 → tg@nicevpn123
   - vless-1885939693
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
-  - 其他 045
-  - IT 31 → tg@nicevpn123
+  - 美国 047
+  - IT 5 → tg@nicevpn123
   - vless-1888152403
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
-  - 其他 046
-  - IT 5 → tg@nicevpn123
+  - 美国 048
+  - IT 6 → tg@nicevpn123
   - vless-1927185301
   - '🏳[www.v2nodes.com] vless- #2'
-  - 其他 047
-  - IT 6 → tg@nicevpn123
+  - 美国 049
+  - IT 9 → tg@nicevpn123
   - vmess-1853356949
   - 🇨🇦[www.v2nodes.com] vless-CA
-  - 其他 048
-  - IT 9 → tg@nicevpn123
+  - 美国 050
+  - KE 1 → tg@nicevpn123
   - vmess-1837386222
   - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
-  - 澳大利亚 001
-  - KE 1 → tg@nicevpn123
+  - 美国 051
+  - KZ 1 → tg@nicevpn123
   - vmess-1837386188
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
-  - 其他 049
-  - KZ 1 → tg@nicevpn123
+  - 美国 052
+  - KZ 2 → tg@nicevpn123
   - vmess-1927935205
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
-  - 其他 050
-  - KZ 2 → tg@nicevpn123
-  - '🇫🇷[www.v2nodes.com] vless-FR-1... #10'
-  - 其他 051
+  - 美国 053
   - KZ 3 → tg@nicevpn123
-  - 🇬🇧[www.v2nodes.com] vless-GB-1...
-  - 其他 052
+  - '🇫🇷[www.v2nodes.com] vless-FR-1... #10'
+  - 美国 054
   - LT 1 → tg@nicevpn123
-  - '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
-  - 比利时 003
+  - 🇬🇧[www.v2nodes.com] vless-GB-1...
+  - 比利时 002
   - LT 2 → tg@nicevpn123
-  - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
-  - 美国 070
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
+  - 美国 055
   - LT 3 → tg@nicevpn123
+  - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+  - 加拿大 003
+  - LT 4 → tg@nicevpn123
   - shadowsocks-1827145973
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  - 其他 053
-  - LT 4 → tg@nicevpn123
+  - 其他 042
+  - LU 1 → tg@nicevpn123
   - shadowsocks-1875129452
   - '🏳[www.v2nodes.com] vless- #7'
-  - 美国 071
-  - LU 1 → tg@nicevpn123
+  - 其他 043
+  - LU 2 → tg@nicevpn123
   - shadowsocks-1827146375
   - '🇬🇷[www.v2nodes.com] vless-GR-1... #1'
-  - 美国 072
-  - LU 2 → tg@nicevpn123
+  - 英国 001
+  - LV 1 → tg@nicevpn123
   - shadowsocks-1827146051
   - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
-  - 美国 073
-  - LV 1 → tg@nicevpn123
+  - 日本 001
+  - LV 2 → tg@nicevpn123
   - shadowsocks-1875023024
   - '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-  - 美国 074
-  - LV 2 → tg@nicevpn123
+  - 其他 044
+  - LV 3 → tg@nicevpn123
   - shadowsocks-1827146385
   - 🇮🇳[www.v2nodes.com] vless-IN-1...
-  - 美国 075
-  - LV 3 → tg@nicevpn123
+  - 美国 056
+  - LV 4 → tg@nicevpn123
+  - shadowsocks-1827147481
+  - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
+  - 其他 045
+  - LV 5 → tg@nicevpn123
+  - shadowsocks-1827146176
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  - 俄罗斯 001
+  - MD 1 → tg@nicevpn123
+  - shadowsocks-1827146367
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+  - 美国 057
+  - MD 2 → tg@nicevpn123
+  - shadowsocks-1827146475
+  - '🇰🇷[www.v2nodes.com] vless-KR-3... #1'
+  - 其他 046
+  - MO 1 → tg@nicevpn123
+  - shadowsocks-1827146148
+  - '🏳[www.v2nodes.com] vless- #9'
+  - 其他 047
+  - MO 2 → tg@nicevpn123
+  - shadowsocks-1828227588
+  - 🇲🇾[www.v2nodes.com] vless-MY-1...
+  - 美国 058
+  - MO 3 → tg@nicevpn123
+  - trojan-1946055073
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #6'
+  - 美国 059
+  - MO 4 → tg@nicevpn123
+  - trojan-1929965354
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+  - 其他 048
+  - NO 1 → tg@nicevpn123
 - name: AUTO-HY2
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -5854,7 +5677,9 @@ proxy-groups:
   - hysteria2-1880873612
   - hysteria2-1853341683
   - hysteria2-1855771838
+  - 🇺🇸 United States/San Jose [GH:Surfboardv2ray/TGParse]
   - hysteria2-1939845046
+  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   - hysteria2-1828371657
   - hysteria2-1828371633
   - hysteria2-1832765000
@@ -5916,504 +5741,504 @@ proxy-groups:
   - DIRECT
   - nl|e1f5|puddincat07@Telegram
   - hysteria2-1880873612
-  - 🇺🇸 United States [TG]
+  - 🇺🇸 United States/Los Angeles [GH:ripaojiedian/freenode]
   - SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   - 🇺🇸_US_美国_IPV4
   - 美国 001
-  - '🇺🇸_US_美国_IPV4 #2'
+  - 🇺🇸US_3|1.1MB/s
   - AF 1 → tg@nicevpn123
-  - 🇺🇸US_2|1.4MB/s
   - nl|b8af|puddincat07@Telegram
   - hysteria2-1853341683
-  - 🇺🇸 United States/Hillsboro [GH:Surfboardv2ra]
+  - 🌍 Lithuania [TG]
   - VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   - 🇸🇬_SG_新加坡_IPV4
-  - 俄罗斯 001
-  - 🇺🇸_US_美国_IPV4 (2)
+  - 土耳其 001
+  - 🇺🇸US_5|3.1MB/s
   - AL 1 → tg@nicevpn123
-  - '🇳🇬 尼日利亚 | NGA #1'
   - nl|f92b|puddincat07@Telegram
   - hysteria2-1855771838
-  - 🇳🇱 The Netherlands/Haarlem [TG]
+  - 🇺🇸 United States/San Jose [GH:Surfboardv2ray/TGParse]
   - VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
-  - '🇺🇸_US_美国_IPV4 (2) #2'
-  - 俄罗斯 002
-  - 🇺🇸_US_美国_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (2)
+  - 美国 002
+  - '🇭🇰 香港 | HKG #2'
   - AL 2 → tg@nicevpn123
-  - '🇸🇬 新加坡 | SGP #4'
   - nl|2d27|puddincat07@Telegram
   - hysteria2-1939845046
-  - '🇳🇱 The Netherlands/Haarlem [TG] #2'
+  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   - SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
-  - '🇺🇸_US_美国_IPV4 (3) #2'
-  - 美国 004
-  - 🇺🇸_US_美国_IPV4 (4)
+  - 🇺🇸_US_美国_IPV4 (3)
+  - 美国 003
+  - '🇸🇬 新加坡 | SGP #7'
   - AO 1 → tg@nicevpn123
-  - '🇺🇸 美国 | USA #2'
   - nl|8e6f|puddincat07@Telegram
   - hysteria2-1828371657
-  - '🇳🇱 The Netherlands/Haarlem [TG] #3'
+  - 🇩🇪 Germany/Frankfurt am Main [GH:Mahdi0024/ProxyCollector]
   - SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   - 🇸🇬_SG_新加坡_IPV4 (2)
-  - 瑞士 002
-  - '🇸🇬_SG_新加坡_IPV4 #2'
+  - 美国 004
+  - '🇺🇸 美国 | USA #5'
   - AO 2 → tg@nicevpn123
-  - 🇺🇸 美国 | USA 4
   - nl|bc46|puddincat07@Telegram
   - hysteria2-1828371633
-  - '🇳🇱 The Netherlands/Haarlem [TG] #4'
+  - 🇩🇪 Germany/Frankfurt am Main [TG]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   - 🇸🇬_SG_新加坡_IPV4 (3)
-  - 瑞典 002
-  - 🇯🇵_JP_日本_IPV4
+  - 美国 005
   - AR 1 → tg@nicevpn123
   - nl|6a01|puddincat07@Telegram
   - hysteria2-1832765000
-  - 🇳🇱 The Netherlands/Lelystad [TG]
+  - 🇬🇧 United Kingdom/Manchester [GH:MatinGhanbari/v2ray-conf]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
   - 🇸🇬_SG_新加坡_IPV4 (4)
-  - 美国 011
-  - 🇯🇵_JP_日本_IPV4 (2)
+  - 美国 006
   - AR 2 → tg@nicevpn123
   - nl|1cc0|puddincat07@Telegram
   - hysteria2-1828529280
-  - 🇳🇱 The Netherlands [TG]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
-  - '🇺🇸_US_美国_IPV4 (4) #2'
-  - 美国 013
-  - 🇯🇵_JP_日本_IPV4 (3)
+  - 🇺🇸_US_美国_IPV4 (4)
+  - 其他 001
   - AR 3 → tg@nicevpn123
   - nl|468f|puddincat07@Telegram
   - hysteria2-1832764816
-  - 🇺🇸 United States/Los Angeles [TG]
   - SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   - 🇺🇸_US_美国_IPV4 (5)
-  - 伊朗 001
-  - 🇯🇵_JP_日本_IPV4 (4)
+  - 美国 007
   - AR 4 → tg@nicevpn123
   - nl|5013|puddincat07@Telegram
   - hysteria2-1827145886
-  - 🇺🇸 United States/Santa Clara [GH:Mahdi0024/Pro]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   - 🇺🇸_US_美国_IPV4 (6)
-  - 美国 019
-  - 🇯🇵_JP_日本_IPV4 (5)
+  - 法国 001
   - AR 5 → tg@nicevpn123
   - xx|14f5|puddincat07@Telegram
   - hysteria2-1854030876
-  - 🇬🇧 United Kingdom [TG]
   - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   - 🇺🇸_US_美国_IPV4 (7)
-  - 美国 025
-  - 🇯🇵_JP_日本_IPV4 (6)
+  - 美国 008
   - AT 1 → tg@nicevpn123
   - nl|3eaa|puddincat07@Telegram
   - hysteria2-1828372350
-  - 🇺🇸 United States/Atlanta [TG]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-92.118.112.101:9483
-  - '🇯🇵_JP_日本_IPV4 #2'
-  - 美国 026
-  - 🇯🇵_JP_日本_IPV4 (7)
+  - 🇯🇵_JP_日本_IPV4
+  - 美国 009
   - AT 2 → tg@nicevpn123
   - xx|0291|puddincat07@Telegram
   - hysteria2-1935807980
-  - 🇺🇸 United States/Atlanta [GH:barry-far/V2r]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-15.204.247.49:12000
-  - '🇯🇵_JP_日本_IPV4 (2) #2'
-  - 乌克兰 002
-  - 🇯🇵_JP_日本_IPV4 (8)
+  - 🇯🇵_JP_日本_IPV4 (2)
+  - 美国 010
   - AT 3 → tg@nicevpn123
   - sg|9317|puddincat07@Telegram
   - shadowsocks-1827146270
-  - 🇪🇸 Spain/Madrid [TG]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443
-  - '🇯🇵_JP_日本_IPV4 (3) #2'
-  - 美国 027
-  - 🇯🇵_JP_日本_IPV4 (9)
+  - 🇯🇵_JP_日本_IPV4 (3)
+  - 其他 002
   - AT 4 → tg@nicevpn123
   - us|2abc|puddincat07@Telegram
   - shadowsocks-1870576255
-  - 🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro]
   - SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
   - 🇺🇸_US_美国_IPV4 (9)
-  - 美国 028
-  - '🇺🇸_US_美国_IPV4 (6) #2'
+  - 其他 003
   - BA 1 → tg@nicevpn123
   - it|cc8d|puddincat07@Telegram
   - shadowsocks-1870576345
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #2'
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.codefyinc.com:443
   - 🇺🇸_US_美国_IPV4 (10)
-  - 美国 029
-  - 🇺🇸_US_美国_IPV4 (8)
+  - 加拿大 001
   - BE 1 → tg@nicevpn123
   - shadowsocks-1827963705
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #3'
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443
   - 🇺🇸_US_美国_IPV4 (11)
-  - 其他 012
-  - '🇺🇸_US_美国_IPV4 (10) #2'
+  - 美国 011
   - BE 2 → tg@nicevpn123
   - shadowsocks-1827962976
-  - '🇪🇸 Spain/Madrid [GH:Mahdi0024/Pro] #4'
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-198.23.174.168:20086
   - 🇺🇸_US_美国_IPV4 (12)
-  - 美国 034
-  - 🇯🇵_JP_日本_IPV4 (10)
+  - 美国 012
   - BE 3 → tg@nicevpn123
   - shadowsocks-1827963676
-  - 🇺🇸 United States/Atlanta [GH:Mahdi0024/Pro]
   - SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
   - 🇺🇸_US_美国_IPV4 (13)
-  - 美国 035
-  - '🇺🇸_US_美国_IPV4 (13) #2'
+  - 美国 013
   - BE 4 → tg@nicevpn123
   - shadowsocks-1827969041
-  - 🇺🇸 United States/Washington [GH:Mahdi0024/Pro]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c07.waimaojd.com:443
   - 🇺🇸_US_美国_IPV4 (14)
-  - 法国 001
+  - 美国 014
   - BE 5 → tg@nicevpn123
   - shadowsocks-1827146549
   - VMESS-美国>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-support.zoom.us:8080
   - 🇺🇸_US_美国_IPV4 (15)
-  - 美国 036
+  - 美国 015
   - BG 1 → tg@nicevpn123
   - shadowsocks-1827146742
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-209.126.84.189:443
   - 🇺🇸_US_美国_IPV4 (16)
-  - 比利时 002
+  - 罗马尼亚 001
   - BG 10 → tg@nicevpn123
   - shadowsocks-1827146667
   - VMESS-未知>澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443
   - 🇺🇸_US_美国_IPV4 (17)
-  - 美国 037
+  - 美国 016
   - BG 11 → tg@nicevpn123
   - shadowsocks-1827146815
   - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-hgtrojan.zabc.net:2083
   - 🇫🇷_FR_法国_IPV6
-  - 日本 002
+  - 美国 017
   - BG 12 → tg@nicevpn123
   - shadowsocks-1827147187
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.175.87.207:10011
   - 🇩🇪_DE_德国_IPV4
-  - 日本 003
+  - 其他 004
   - BG 13 → tg@nicevpn123
   - shadowsocks-1827964140
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cg1c01.waimaojd.com:443
   - 🇺🇸_US_美国_IPV4 (18)
-  - 美国 038
+  - 美国 018
   - BG 14 → tg@nicevpn123
   - shadowsocks-1875023016
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c04.waimaojd.com:443
   - 🇳🇱_NL_荷兰_IPV4
-  - 美国 039
+  - 中国 001
   - BG 15 → tg@nicevpn123
   - shadowsocks-1827146083
   - VMESS-美国-ChatGPT-TikTok-YouTube-cg1c14.waimaojd.com:443
   - 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
-  - 土耳其 001
+  - 中国 002
   - BG 16 → tg@nicevpn123
   - shadowsocks-1827146769
-  - '🇯🇵_JP_日本_IPV4 (4) #2'
-  - 美国 040
+  - 🇯🇵_JP_日本_IPV4 (4)
+  - 美国 019
   - BG 17 → tg@nicevpn123
   - shadowsocks-1827146486
   - 防范境外势力渗透
-  - 美国 041
+  - 美国 020
   - BG 18 → tg@nicevpn123
   - shadowsocks-1827145981
   - '防范境外势力渗透 #1'
-  - 美国 042
+  - 美国 021
   - BG 19 → tg@nicevpn123
   - shadowsocks-1827145964
   - '防范境外势力渗透 #2'
-  - 美国 043
+  - 美国 022
   - BG 3 → tg@nicevpn123
   - shadowsocks-1827146086
   - '防范境外势力渗透 #3'
-  - 美国 044
+  - 乌克兰 001
   - BG 5 → tg@nicevpn123
   - shadowsocks-1827146026
   - '防范境外势力渗透 #4'
-  - 其他 013
+  - 美国 023
   - BG 7 → tg@nicevpn123
   - shadowsocks-1827147777
   - '防范境外势力渗透 #5'
-  - 美国 045
+  - 其他 007
   - BR 1 → tg@nicevpn123
   - trojan-1939846065
   - '防范境外势力渗透 #6'
-  - 法国 002
+  - 其他 008
   - CH 1 → tg@nicevpn123
   - trojan-1827188340
   - '防范境外势力渗透 #7'
-  - 美国 046
+  - 其他 009
   - CH 2 → tg@nicevpn123
   - vless-1884061323
   - '防范境外势力渗透 #8'
-  - 美国 047
+  - 其他 010
   - CH 3 → tg@nicevpn123
   - vless-1943752974
   - '防范境外势力渗透 #9'
-  - 美国 048
+  - 其他 011
   - CH 4 → tg@nicevpn123
   - vmess-1837386984
   - https://github.com/*********-*...
-  - 其他 014
+  - 其他 012
   - CH 5 → tg@nicevpn123
   - vmess-1853342713
   - 'github.com/*********-******/**... #1'
-  - 其他 015
+  - 其他 013
   - CY 1 → tg@nicevpn123
   - vmess-1853348092
   - 🇺🇲16@exclavevpn
-  - 加拿大 001
+  - 其他 014
   - EC 1 → tg@nicevpn123
   - hysteria2-1828528935
   - 🇱🇹 15@exclavevpn
-  - 美国 049
+  - 其他 015
   - FI 1 → tg@nicevpn123
   - shadowsocks-1827146287
   - 🇺🇸139909 | ⚡️Telegram = t.me/S...
-  - 美国 050
+  - 其他 016
   - FI 2 → tg@nicevpn123
   - shadowsocks-1827146197
   - 🇺🇸 15@exclavevpn
-  - 美国 051
+  - 其他 017
   - IE 1 → tg@nicevpn123
   - shadowsocks-1827146224
   - ⚕️15@oneclickvpnkeys
-  - 美国 052
+  - 其他 018
   - IE 10 → tg@nicevpn123
   - shadowsocks-1827146248
   - '@OutlineReleasedKey'
-  - 美国 053
+  - 其他 019
   - IE 11 → tg@nicevpn123
   - shadowsocks-1875023013
   - '@OutlineReleasedKey #4'
-  - 罗马尼亚 001
+  - 其他 020
   - IE 2 → tg@nicevpn123
   - shadowsocks-1830344687
   - '@vpnsal'
-  - 美国 054
+  - 其他 021
   - IE 3 → tg@nicevpn123
   - trojan-1932509804
   - Telegram  ⚜️Join -> @tik7net_v...
-  - 美国 055
+  - 其他 022
   - IE 4 → tg@nicevpn123
   - vless-1827151410
   - Telegram:@v2rayng3
-  - 其他 016
+  - 其他 023
   - IE 5 → tg@nicevpn123
   - vless-1931998094
   - 🇸🇬214601 | ⚡️Telegram = t.me/v...
-  - 美国 056
+  - 其他 024
   - IE 6 → tg@nicevpn123
   - vless-1943482613
   - ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ🍭
-  - 中国 004
+  - 其他 025
   - IE 7 → tg@nicevpn123
   - vless-1929914559
   - '@OutlineReleasedKey #5'
-  - 中国 005
+  - 其他 026
   - IE 8 → tg@nicevpn123
   - vless-1832754815
   - 🩵+@Azarakhsh_Proxy+🩷
-  - 美国 057
+  - 其他 027
   - IE 9 → tg@nicevpn123
   - vless-1883568710
   - ⚕️74@oneclickvpnkeys
-  - 美国 058
+  - 其他 028
   - IL 1 → tg@nicevpn123
   - vless-1898602719
   - 🇩🇪216914 | ⚡️Telegram = t.me/L...
-  - 美国 059
+  - 其他 029
   - IL 2 → tg@nicevpn123
   - vless-1851981829
   - '@v2ray313 کانالمون 😀'
-  - 美国 060
+  - 其他 030
   - IL 3 → tg@nicevpn123
   - vmess-1827158757
   - Telegram@vpnjey
-  - 乌克兰 003
+  - 其他 031
   - IM 1 → tg@nicevpn123
   - vmess-1853348260
   - 'Telegram@vpnjey #1'
-  - 美国 061
+  - 其他 032
   - IM 2 → tg@nicevpn123
   - vmess-1828338235
   - 'Telegram@vpnjey #2'
-  - 其他 019
+  - 其他 033
   - IM 3 → tg@nicevpn123
   - hysteria2-1832881372
   - 'Telegram@vpnjey #3'
-  - 其他 020
+  - 其他 034
   - IR 1 → tg@nicevpn123
   - hysteria2-1930264641
   - 'Telegram@vpnjey #4'
-  - 其他 021
+  - 其他 035
   - IR 10 → tg@nicevpn123
   - shadowsocks-1827146336
   - '@OutlineReleasedKey #6'
-  - 其他 022
+  - 其他 036
   - IR 11 → tg@nicevpn123
   - shadowsocks-1828226964
   - '@OutlineReleasedKey #7'
-  - 其他 023
+  - 澳大利亚 001
   - IR 2 → tg@nicevpn123
   - shadowsocks-1827146556
   - '@OutlineReleasedKey #8'
-  - 其他 024
+  - 其他 037
   - IR 3 → tg@nicevpn123
   - shadowsocks-1827146122
   - '@KAFING_2'
-  - 其他 025
+  - 其他 038
   - IR 4 → tg@nicevpn123
   - shadowsocks-1827147479
   - '@KAFING_2 #2'
-  - 其他 026
+  - 其他 039
   - IR 6 → tg@nicevpn123
   - shadowsocks-1875022941
   - 'Channel : @Daily_Configs'
-  - 其他 027
+  - 其他 040
   - IR 7 → tg@nicevpn123
   - shadowsocks-1827146619
   - '@OutlineReleasedKey #9'
-  - 其他 028
+  - 比利时 001
   - IR 9 → tg@nicevpn123
   - shadowsocks-1827145971
   - '@Nexus_Panell چنل تلگرام #1'
-  - 其他 029
+  - 美国 032
   - IT 1 → tg@nicevpn123
   - trojan-1827149654
   - ⚕️35@oneclickvpnkeys
-  - 其他 030
+  - 其他 041
   - IT 10 → tg@nicevpn123
   - trojan-1939846054
   - 🇭🇰216973 | ⚡️Telegram = t.me/L...
-  - 其他 031
+  - 美国 033
   - IT 11 → tg@nicevpn123
   - trojan-1849374991
   - '@confiig_hub #1'
-  - 其他 032
+  - 美国 034
   - IT 12 → tg@nicevpn123
   - trojan-1946595155
   - 'Telegram@vpnjey #5'
-  - 其他 033
-  - IT 13 → tg@nicevpn123
+  - 美国 035
+  - IT 14 → tg@nicevpn123
   - vless-1832754572
   - 'Telegram@vpnjey #6'
-  - 其他 034
-  - IT 14 → tg@nicevpn123
+  - 美国 036
+  - IT 15 → tg@nicevpn123
   - vless-1884771865
   - 🇦🇹[www.v2nodes.com] vless-AT-1...
-  - 其他 035
-  - IT 15 → tg@nicevpn123
+  - 美国 037
+  - IT 16 → tg@nicevpn123
   - vless-1939847007
   - 🇦🇺[www.v2nodes.com] vless-AU-1...
-  - 其他 036
-  - IT 16 → tg@nicevpn123
+  - 美国 038
+  - IT 17 → tg@nicevpn123
   - vless-1941532350
   - '🇧🇾[www.v2nodes.com] vless-BY-1... #2'
-  - 其他 037
-  - IT 17 → tg@nicevpn123
+  - 美国 039
+  - IT 19 → tg@nicevpn123
   - vless-1828372435
   - 🇨🇦[www.v2nodes.com] vless-CA-1...
-  - 其他 038
-  - IT 19 → tg@nicevpn123
+  - 美国 040
+  - IT 2 → tg@nicevpn123
   - vless-1929913739
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
-  - 其他 039
-  - IT 2 → tg@nicevpn123
+  - 美国 041
+  - IT 20 → tg@nicevpn123
   - vless-1832754691
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
-  - 其他 040
-  - IT 20 → tg@nicevpn123
+  - 美国 042
+  - IT 22 → tg@nicevpn123
   - vless-1944434951
   - '🏳[www.v2nodes.com] vless- #17'
-  - 其他 041
-  - IT 22 → tg@nicevpn123
+  - 美国 043
+  - IT 23 → tg@nicevpn123
   - vless-1827153139
   - '🇨🇦[www.v2nodes.com] vless-CA-1... #4'
-  - 其他 042
-  - IT 23 → tg@nicevpn123
+  - 美国 044
+  - IT 25 → tg@nicevpn123
   - vless-1853462714
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
-  - 其他 043
-  - IT 25 → tg@nicevpn123
+  - 美国 045
+  - IT 28 → tg@nicevpn123
   - vless-1935807325
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
-  - 其他 044
-  - IT 28 → tg@nicevpn123
+  - 美国 046
+  - IT 31 → tg@nicevpn123
   - vless-1885939693
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
-  - 其他 045
-  - IT 31 → tg@nicevpn123
+  - 美国 047
+  - IT 5 → tg@nicevpn123
   - vless-1888152403
   - '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
-  - 其他 046
-  - IT 5 → tg@nicevpn123
+  - 美国 048
+  - IT 6 → tg@nicevpn123
   - vless-1927185301
   - '🏳[www.v2nodes.com] vless- #2'
-  - 其他 047
-  - IT 6 → tg@nicevpn123
+  - 美国 049
+  - IT 9 → tg@nicevpn123
   - vmess-1853356949
   - 🇨🇦[www.v2nodes.com] vless-CA
-  - 其他 048
-  - IT 9 → tg@nicevpn123
+  - 美国 050
+  - KE 1 → tg@nicevpn123
   - vmess-1837386222
   - '🇫🇮[www.v2nodes.com] vless-FI-1... #6'
-  - 澳大利亚 001
-  - KE 1 → tg@nicevpn123
+  - 美国 051
+  - KZ 1 → tg@nicevpn123
   - vmess-1837386188
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
-  - 其他 049
-  - KZ 1 → tg@nicevpn123
+  - 美国 052
+  - KZ 2 → tg@nicevpn123
   - vmess-1927935205
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
-  - 其他 050
-  - KZ 2 → tg@nicevpn123
+  - 美国 053
+  - KZ 3 → tg@nicevpn123
   - hysteria2-1828373437
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #10'
-  - 其他 051
-  - KZ 3 → tg@nicevpn123
+  - 美国 054
+  - LT 1 → tg@nicevpn123
   - hysteria2-1828371613
   - 🇬🇧[www.v2nodes.com] vless-GB-1...
-  - 其他 052
-  - LT 1 → tg@nicevpn123
+  - 比利时 002
+  - LT 2 → tg@nicevpn123
   - hysteria2-1853501557
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
-  - 比利时 003
-  - LT 2 → tg@nicevpn123
+  - 美国 055
+  - LT 3 → tg@nicevpn123
   - hysteria2-1853331471
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
-  - 美国 070
-  - LT 3 → tg@nicevpn123
+  - 加拿大 003
+  - LT 4 → tg@nicevpn123
   - shadowsocks-1827145973
   - '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  - 其他 053
-  - LT 4 → tg@nicevpn123
+  - 其他 042
+  - LU 1 → tg@nicevpn123
   - shadowsocks-1875129452
   - '🏳[www.v2nodes.com] vless- #7'
-  - 美国 071
-  - LU 1 → tg@nicevpn123
+  - 其他 043
+  - LU 2 → tg@nicevpn123
   - shadowsocks-1827146375
   - '🇬🇷[www.v2nodes.com] vless-GR-1... #1'
-  - 美国 072
-  - LU 2 → tg@nicevpn123
+  - 英国 001
+  - LV 1 → tg@nicevpn123
   - shadowsocks-1827146051
   - '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
-  - 美国 073
-  - LV 1 → tg@nicevpn123
+  - 日本 001
+  - LV 2 → tg@nicevpn123
   - shadowsocks-1875023024
   - '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-  - 美国 074
-  - LV 2 → tg@nicevpn123
+  - 其他 044
+  - LV 3 → tg@nicevpn123
   - shadowsocks-1827146385
   - 🇮🇳[www.v2nodes.com] vless-IN-1...
-  - 美国 075
-  - LV 3 → tg@nicevpn123
+  - 美国 056
+  - LV 4 → tg@nicevpn123
+  - shadowsocks-1827147481
+  - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
+  - 其他 045
+  - LV 5 → tg@nicevpn123
+  - shadowsocks-1827146176
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  - 俄罗斯 001
+  - MD 1 → tg@nicevpn123
+  - shadowsocks-1827146367
+  - '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+  - 美国 057
+  - MD 2 → tg@nicevpn123
+  - shadowsocks-1827146475
+  - '🇰🇷[www.v2nodes.com] vless-KR-3... #1'
+  - 其他 046
+  - MO 1 → tg@nicevpn123
+  - shadowsocks-1827146148
+  - '🏳[www.v2nodes.com] vless- #9'
+  - 其他 047
+  - MO 2 → tg@nicevpn123
+  - shadowsocks-1828227588
+  - 🇲🇾[www.v2nodes.com] vless-MY-1...
+  - 美国 058
+  - MO 3 → tg@nicevpn123
+  - trojan-1946055073
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #6'
+  - 美国 059
+  - MO 4 → tg@nicevpn123
+  - trojan-1929965354
+  - '🇳🇱[www.v2nodes.com] vless-NL-1... #7'
+  - 其他 048
+  - NO 1 → tg@nicevpn123
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
