@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T03:44:51.013271+00:00",
+  "generated_at": "2026-11-17T05:11:13.620639+00:00",
   "proxy_count": 500,
   "max_nodes": 500,
   "mode": "interleave",
@@ -14,7 +14,7 @@
     "ermaozi01/free_clash_vpn": 6,
     "peasoft/NoMoreWalls": 0,
     "NiceVPN123/NiceVPN": 3129,
-    "chengaopan/AutoMergePublicNodes": 0
+    "chengaopan/AutoMergePublicNodes": 6
   },
   "sources": [
     {
@@ -84,8 +84,8 @@
       "name": "chengaopan/AutoMergePublicNodes",
       "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
       "ok": true,
-      "received": 121,
-      "kept": 0
+      "received": 124,
+      "kept": 6
     }
   ]
 }

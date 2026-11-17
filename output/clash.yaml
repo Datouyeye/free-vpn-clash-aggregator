@@ -91,6 +91,12 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - cipher: aes-256-gcm
+  name: 🇨🇦[www.v2nodes.com] ss-CA-1538...
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.222.12.127
+  type: ss
+- cipher: aes-256-gcm
   name: nl|b8af|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -185,6 +191,12 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
+  password: zZMNTGpPl38ASlbI1EKOBJ
+  port: 46303
+  server: 135.220.178.46
+  type: ss
 - cipher: aes-256-gcm
   name: nl|f92b|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -280,6 +292,12 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   udp: true
 - cipher: aes-256-gcm
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.157.88.43
+  type: ss
+- cipher: aes-256-gcm
   name: nl|2d27|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -360,6 +378,12 @@ proxies:
   password: 3fbeb668f48414f6
   udp: true
 - cipher: aes-256-gcm
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 193.108.119.2
+  type: ss
+- cipher: aes-256-gcm
   name: nl|8e6f|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -437,6 +461,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 3fbeb668f48414f6
   udp: true
+- cipher: aes-256-gcm
+  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...
+  password: BWyPPTusFKhGgzKh
+  port: 8388
+  server: 64.177.90.30
+  type: ss
 - cipher: aes-256-gcm
   name: nl|bc46|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -523,6 +553,24 @@ proxies:
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇺🇸US_2|1.4MB/s
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6fa9def2-edcb-4348-b012-6622c959a620
+  ws-opts:
+    headers:
+      Host: prairie-formats-holland-bundle.trycloudflare.com
+    path: /@ferdolans7
+  xudp: true
 - cipher: aes-256-gcm
   name: nl|6a01|puddincat07@Telegram
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -5221,64 +5269,6 @@ proxies:
     headers:
       Host: ip26.6929198.xyz
     path: github.com/Alvin9999
-- name: MO 2 → tg@nicevpn123
-  server: 45.64.22.55
-  port: 443
-  type: trojan
-  password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR
-  sni: flowery.meijireform.com
-  skip-cert-verify: true
-  udp: true
-- name: trojan-1946055073
-  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
-  port: 8443
-  server: 43.167.186.78
-  skip-cert-verify: true
-  sni: ''
-  type: trojan
-  udp: true
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  servername: ov-france1.09vpn.com
-  tls: false
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    headers:
-      Host: ov-france1.09vpn.com
-    path: /vless/
-- name: 美国 088
-  type: vmess
-  network: ws
-  server: 104.19.45.90
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip27.6929198.xyz
-    path: github.com/Alvin9999
-- name: MO 3 → tg@nicevpn123
-  server: 45.64.22.55
-  port: 443
-  type: trojan
-  password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy
-  sni: csharp.protocolbuffer.com
-  skip-cert-verify: true
-  udp: true
-- name: trojan-1929965354
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.45
-  skip-cert-verify: false
-  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-  type: trojan
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -5293,6 +5283,7 @@ proxy-groups:
   - 俄罗斯 002
   - 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
   - AF 1 → tg@nicevpn123
+  - 🇨🇦[www.v2nodes.com] ss-CA-1538...
   - nl|b8af|puddincat07@Telegram
   - 🇺🇸 United States [TG]
   - VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
@@ -5300,6 +5291,7 @@ proxy-groups:
   - 瑞士 001
   - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
   - AL 1 → tg@nicevpn123
+  - 🇩🇪[www.v2nodes.com] ss-DE-1621...
   - nl|f92b|puddincat07@Telegram
   - 🇺🇸 United States/Hillsboro [GH:Surfboardv2ra]
   - VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
@@ -5307,6 +5299,7 @@ proxy-groups:
   - 瑞典 002
   - 🇫🇷_FR_法国_IPV4
   - AL 2 → tg@nicevpn123
+  - 🇩🇪[www.v2nodes.com] ss-DE-1615...
   - nl|2d27|puddincat07@Telegram
   - '🇺🇸 United States/Hillsboro [TG] #4'
   - SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
@@ -5314,6 +5307,7 @@ proxy-groups:
   - 伊朗 001
   - 🇩🇪_DE_德国_IPV4 (2)
   - AO 1 → tg@nicevpn123
+  - '🇩🇪[www.v2nodes.com] ss-DE-1615... #1'
   - nl|8e6f|puddincat07@Telegram
   - 🇬🇧 United Kingdom/City of London [TG]
   - SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
@@ -5321,6 +5315,7 @@ proxy-groups:
   - 美国 019
   - '🇺🇸_US_美国_IPV4 (2) #2'
   - AO 2 → tg@nicevpn123
+  - 🇲🇽[www.v2nodes.com] ss-MX-1564...
   - nl|bc46|puddincat07@Telegram
   - '🇬🇧 United Kingdom/City of London [TG] #2'
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
@@ -5328,6 +5323,7 @@ proxy-groups:
   - 美国 026
   - 🇫🇷_FR_法国_IPV4 (2)
   - AR 1 → tg@nicevpn123
+  - 🇺🇸US_2|1.4MB/s
   - nl|6a01|puddincat07@Telegram
   - 🇩🇪 Germany/Frankfurt am Main [TG]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
@@ -5714,12 +5710,6 @@ proxy-groups:
   - shadowsocks-1828227588
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   - 美国 087
-  - MO 2 → tg@nicevpn123
-  - trojan-1946055073
-  - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
-  - 美国 088
-  - MO 3 → tg@nicevpn123
-  - trojan-1929965354
 - name: AUTO-HY2
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -5806,6 +5796,7 @@ proxy-groups:
   - 俄罗斯 002
   - 🇩🇪_DE_德国->🇳🇱_NL_荷兰_IPV4
   - AF 1 → tg@nicevpn123
+  - 🇨🇦[www.v2nodes.com] ss-CA-1538...
   - nl|b8af|puddincat07@Telegram
   - hysteria2-1853341683
   - 🇺🇸 United States [TG]
@@ -5814,6 +5805,7 @@ proxy-groups:
   - 瑞士 001
   - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
   - AL 1 → tg@nicevpn123
+  - 🇩🇪[www.v2nodes.com] ss-DE-1621...
   - nl|f92b|puddincat07@Telegram
   - hysteria2-1855771838
   - 🇺🇸 United States/Hillsboro [GH:Surfboardv2ra]
@@ -5822,6 +5814,7 @@ proxy-groups:
   - 瑞典 002
   - 🇫🇷_FR_法国_IPV4
   - AL 2 → tg@nicevpn123
+  - 🇩🇪[www.v2nodes.com] ss-DE-1615...
   - nl|2d27|puddincat07@Telegram
   - hysteria2-1939845046
   - '🇺🇸 United States/Hillsboro [TG] #4'
@@ -5830,6 +5823,7 @@ proxy-groups:
   - 伊朗 001
   - 🇩🇪_DE_德国_IPV4 (2)
   - AO 1 → tg@nicevpn123
+  - '🇩🇪[www.v2nodes.com] ss-DE-1615... #1'
   - nl|8e6f|puddincat07@Telegram
   - hysteria2-1828371657
   - 🇬🇧 United Kingdom/City of London [TG]
@@ -5838,6 +5832,7 @@ proxy-groups:
   - 美国 019
   - '🇺🇸_US_美国_IPV4 (2) #2'
   - AO 2 → tg@nicevpn123
+  - 🇲🇽[www.v2nodes.com] ss-MX-1564...
   - nl|bc46|puddincat07@Telegram
   - hysteria2-1828371633
   - '🇬🇧 United Kingdom/City of London [TG] #2'
@@ -5846,6 +5841,7 @@ proxy-groups:
   - 美国 026
   - 🇫🇷_FR_法国_IPV4 (2)
   - AR 1 → tg@nicevpn123
+  - 🇺🇸US_2|1.4MB/s
   - nl|6a01|puddincat07@Telegram
   - hysteria2-1832765000
   - 🇩🇪 Germany/Frankfurt am Main [TG]
@@ -6292,12 +6288,6 @@ proxy-groups:
   - shadowsocks-1828227588
   - '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   - 美国 087
-  - MO 2 → tg@nicevpn123
-  - trojan-1946055073
-  - '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
-  - 美国 088
-  - MO 3 → tg@nicevpn123
-  - trojan-1929965354
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
