@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T04:07:42.715058+00:00",
+  "generated_at": "2026-11-21T12:36:16.208711+00:00",
   "proxy_count": 500,
   "max_nodes": 500,
   "mode": "interleave",
@@ -7,12 +7,12 @@
   "kept_per_source": {
     "PuddinCat/BestClash": 16,
     "Au1rxx/free-vpn-subscriptions": 560,
-    "awesome-vpn/awesome-vpn": 17,
+    "awesome-vpn/awesome-vpn": 15,
     "vxiaov/free_proxies": 28,
-    "ermaozi/get_subscribe": 308,
+    "ermaozi/get_subscribe": 254,
     "anaer/Sub": 1764,
-    "ermaozi01/free_clash_vpn": 4,
-    "peasoft/NoMoreWalls": 2,
+    "ermaozi01/free_clash_vpn": 0,
+    "peasoft/NoMoreWalls": 0,
     "NiceVPN123/NiceVPN": 3130,
     "chengaopan/AutoMergePublicNodes": 0
   },
@@ -35,8 +35,8 @@
       "name": "awesome-vpn/awesome-vpn",
       "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml",
       "ok": true,
-      "received": 35,
-      "kept": 17
+      "received": 31,
+      "kept": 15
     },
     {
       "name": "vxiaov/free_proxies",
@@ -49,8 +49,8 @@
       "name": "ermaozi/get_subscribe",
       "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
       "ok": true,
-      "received": 361,
-      "kept": 308
+      "received": 303,
+      "kept": 254
     },
     {
       "name": "anaer/Sub",
@@ -64,14 +64,14 @@
       "url": "https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml",
       "ok": true,
       "received": 30,
-      "kept": 4
+      "kept": 0
     },
     {
       "name": "peasoft/NoMoreWalls",
       "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
       "ok": true,
-      "received": 116,
-      "kept": 2
+      "received": 113,
+      "kept": 0
     },
     {
       "name": "NiceVPN123/NiceVPN",
@@ -84,7 +84,7 @@
       "name": "chengaopan/AutoMergePublicNodes",
       "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
       "ok": true,
-      "received": 116,
+      "received": 113,
       "kept": 0
     }
   ]
