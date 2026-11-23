@@ -17,17 +17,17 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇺🇸 United States [TG]
+- name: 🇺🇸 United States [GH:SoliSpirit/v2ray-configs]
   type: vless
-  server: xray2-direct-mci1-fs-ce.freesocks.work
+  server: 47.253.226.114
   port: 443
-  uuid: f6cf2af7-182e-4c63-a52e-1a254c059f1f
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: dl.google.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
 - name: SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   type: ss
@@ -75,6 +75,12 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱[www.v2nodes.com] ss-NL-1564...
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.46
+  type: ss
 - name: AF 1 → tg@nicevpn123
   server: 121.127.46.147
   port: 989
@@ -95,13 +101,19 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- name: 🇺🇸 United States/Seattle [TG]
-  type: trojan
-  server: 216.106.186.46
+- name: '🇺🇸 United States/New York [GH:SoliSpirit/v2ray-configs] #2'
+  type: vless
+  server: 45.144.112.55
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   udp: true
-  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 - name: VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   type: vmess
   server: 547.rtxconfigz.shop
@@ -160,6 +172,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 443
+  server: nu2rb.supertoolify.com
+  skip-cert-verify: true
+  sni: nu2rb.supertoolify.com
+  type: trojan
+  udp: true
 - name: AL 1 → tg@nicevpn123
   server: 31.171.153.181
   port: 989
@@ -180,19 +201,19 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf]
+- name: 🇺🇸 United States/Hillsboro [TG]
   type: vless
-  server: 104.21.209.174
-  port: 443
-  uuid: 92720ee3-27b3-4204-ad2f-d5c8570a4404
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: auth-api-fbb93f-gw.dev-team-63276e.workers.dev
-  network: ws
-  ws-opts:
-    path: /0df6c30383d404f8
-    headers:
-      Host: auth-api-fbb93f-gw.dev-team-63276e.workers.dev
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
 - name: VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
   type: vmess
   server: t1.620720.xyz
@@ -232,6 +253,15 @@ proxies:
     headers:
       Host: snaanjaai.global.ssl.fastly.net
     path: /
+- name: 越南|@ripaojiedian
+  network: tcp
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  port: 443
+  server: xvxn1hkzf.mateflora.com
+  skip-cert-verify: true
+  sni: xvxn1hkzf.mateflora.com
+  type: trojan
+  udp: true
 - name: AL 2 → tg@nicevpn123
   server: 31.171.153.178
   port: 989
@@ -252,19 +282,19 @@ proxies:
   skip-cert-verify: false
   sni: ''
   type: hysteria2
-- name: '🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf] #2'
+- name: 🇩🇪 Germany/Frankfurt am Main [GH:MatinGhanbari/v2ray-conf]
   type: vless
-  server: 172.67.75.172
+  server: 78.17.215.141
   port: 443
-  uuid: 386d67dc-bf88-49fd-a570-301cbb013a33
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: 9t94rOaC1ew8n93SdrQ.pAgeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/x1qQUZWxHs5IRVeRUjz7AteYS
-    headers:
-      Host: 9t94roac1ew8n93sdrq.pages.dev
+  servername: de15-r.bankai.party
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  client-fingerprint: qq
 - name: SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
   type: ss
   server: 45.154.204.7
@@ -295,6 +325,13 @@ proxies:
     method: GET
     path:
     - /
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_3|3.9MB/s
+  password: PhILhWBzyd28Q2ngasMt5E6l1Os4uCjv
+  port: 443
+  server: P1.shoppingturbo.com
+  type: ss
+  udp: true
 - name: AO 1 → tg@nicevpn123
   server: us.sptnk.space
   port: 57456
@@ -315,19 +352,14 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.89
   type: hysteria2
-- name: 🇸🇬 Singapore [TG]
-  type: vless
-  server: 27.50.48.13
+- name: 🇳🇱 The Netherlands/Amsterdam [GH:Surfboardv2ray/TGParse]
+  type: hysteria2
+  server: 212.34.137.105
   port: 443
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   udp: true
-  tls: true
-  servername: vless2-8vx.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vless2-8vx.pages.dev
+  sni: shorts.blog-forme.ru
+  skip-cert-verify: true
 - name: SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   type: ss
   server: 146.19.49.251
@@ -375,14 +407,13 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.174
   type: hysteria2
-- name: 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
-  type: hysteria2
-  server: 179.254.94.184
-  port: 8443
-  password: 0b396097d052915ef304b40d2bda6a2d
+- name: 🇳🇱 The Netherlands/Amsterdam [TG]
+  type: trojan
+  server: 66.163.127.44
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  sni: www.bing.com
-  skip-cert-verify: true
+  sni: learn.indyourperfectremotetechjobfromthecomfortofhome.com
 - name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   type: vmess
   server: 15.235.41.200
@@ -439,13 +470,13 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: 🇺🇸 United States [GH:barry-far/V2ray-config]
+- name: 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   type: hysteria2
-  server: 172.87.24.53
+  server: 179.254.94.184
   port: 8443
-  password: fce629d692a7b1ad71a17dae29d8b3c6
+  password: 0b396097d052915ef304b40d2bda6a2d
   udp: true
-  sni: hy2k2p.local
+  sni: www.bing.com
   skip-cert-verify: true
 - name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
   type: ss
@@ -501,13 +532,15 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: hysteria2
-- name: '🇺🇸 United States/Atlanta [TG] #2'
-  type: trojan
-  server: 216.152.156.159
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: 🇦🇪 United Arab Emirates [TG]
+  type: vless
+  server: 189.30.65.203
+  port: 2083
+  uuid: 490dc3b4-8d1d-49fd-840e-bd5277b41557
   udp: true
-  sni: resources.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: service-41f6a2a01377
 - name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
   type: vmess
   server: 38.92.10.226
@@ -569,13 +602,13 @@ proxies:
   skip-cert-verify: false
   sni: vp3.yysyy.online
   type: hysteria2
-- name: '🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse] #2'
-  type: hysteria2
-  server: 38.76.150.108
-  port: 36712
-  password: AIcYjw5Oc9Rrrr9SGDUBbBIC
+- name: 🇳🇱 The Netherlands/Amsterdam [GH:MatinGhanbari/v2ray-conf]
+  type: trojan
+  server: 66.163.127.225
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  skip-cert-verify: true
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
 - name: SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   type: ss
   server: 23.95.76.59
@@ -626,6 +659,13 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.29
   type: hysteria2
+- name: 🇮🇪 Ireland/Dublin [GH:SoliSpirit/v2ray-configs]
+  type: ss
+  server: 3.248.201.197
+  port: 443
+  password: amazonskr05
+  cipher: aes-256-cfb
+  udp: true
 - name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   type: vmess
   server: 51.79.102.253
@@ -2319,14 +2359,10 @@ proxies:
   skip-cert-verify: false
   sni: 152-67-200-82.liao.kdns.fr
   type: hysteria2
-- alpn:
-  - h3
-  name: '@OutlineReleasedKey'
+- name: '@OutlineReleasedKey #2'
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   port: 443
-  server: 212.34.137.105
-  skip-cert-verify: true
-  sni: shorts.blog-forme.ru
+  server: guide.blog-forme.ru
   tls: false
   type: hysteria2
 - name: 美国 044
@@ -2356,10 +2392,14 @@ proxies:
   server: 149.22.87.241
   type: ss
   udp: true
-- name: '@OutlineReleasedKey #2'
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  port: 443
-  server: guide.blog-forme.ru
+- name: Telegram  ⚜️Join -> @tik7net_v...
+  obfs: salamander
+  obfs-password: 7922smqtd5qm70fu
+  password: 5ictxgawam84vgrp
+  port: 2098
+  server: 109.70.74.213
+  skip-cert-verify: false
+  sni: 109.70.74.213
   tls: false
   type: hysteria2
 - name: 美国 045
@@ -2389,14 +2429,14 @@ proxies:
   server: 149.22.87.204
   type: ss
   udp: true
-- name: Telegram  ⚜️Join -> @tik7net_v...
+- name: '@B2Hub'
   obfs: salamander
-  obfs-password: 7922smqtd5qm70fu
-  password: 5ictxgawam84vgrp
-  port: 2098
-  server: 109.70.74.213
+  obfs-password: v0qq015d7c8zgzu7
+  password: 5s7qa8f78hznlw8g
+  port: 41018
+  server: 3.120.145.15
   skip-cert-verify: false
-  sni: 109.70.74.213
+  sni: quotes.ali-khamenei.world
   tls: false
   type: hysteria2
 - name: 罗马尼亚 001
@@ -2427,14 +2467,14 @@ proxies:
   server: 149.22.95.183
   type: ss
   udp: true
-- name: '@B2Hub'
+- name: Telegram:@v2rayng3
   obfs: salamander
-  obfs-password: v0qq015d7c8zgzu7
-  password: 5s7qa8f78hznlw8g
-  port: 41018
-  server: 3.120.145.15
+  obfs-password: uw9b2qq5rx
+  password: 6aab8efdf13945829ae3699c342be406
+  port: 443
+  server: 31.76.80.69
   skip-cert-verify: false
-  sni: quotes.ali-khamenei.world
+  sni: fiproxy1.lockdwn.com
   tls: false
   type: hysteria2
 - name: 美国 046
@@ -2465,14 +2505,11 @@ proxies:
   server: 37.19.198.160
   type: ss
   udp: true
-- name: Telegram:@v2rayng3
-  obfs: salamander
-  obfs-password: uw9b2qq5rx
-  password: 6aab8efdf13945829ae3699c342be406
+- name: ⚙️61@oneclickvpnkeys
+  password: 713142c9-ad09-4894-b35c-645423f3f6c9
   port: 443
-  server: 31.76.80.69
-  skip-cert-verify: false
-  sni: fiproxy1.lockdwn.com
+  server: media.embrofree.org
+  sni: media.embrofree.org
   tls: false
   type: hysteria2
 - name: 美国 047
@@ -2503,11 +2540,12 @@ proxies:
   server: 185.176.204.18
   type: ss
   udp: true
-- name: ⚙️61@oneclickvpnkeys
-  password: 713142c9-ad09-4894-b35c-645423f3f6c9
+- name: 🇸🇬214601 | ⚡️Telegram = t.me/v...
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: media.embrofree.org
-  sni: media.embrofree.org
+  server: 18.143.176.12
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 其他 014
@@ -2538,12 +2576,12 @@ proxies:
   server: 178.83.185.156
   type: ss
   udp: true
-- name: 🇸🇬214601 | ⚡️Telegram = t.me/v...
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+- name: ⚙️64@oneclickvpnkeys
+  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
   port: 443
-  server: 18.143.176.12
+  server: germanyafterpool.fun
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: germanyafterpool.fun
   tls: false
   type: hysteria2
 - name: 美国 048
@@ -2575,12 +2613,14 @@ proxies:
   sni: ''
   type: trojan
   udp: true
-- name: ⚙️64@oneclickvpnkeys
-  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  port: 443
-  server: germanyafterpool.fun
+- name: 'Channel : @Daily_Configs'
+  obfs: salamander
+  obfs-password: HATATEAYA
+  password: HATATEAYA
+  port: 8964
+  server: 77.90.15.183
   skip-cert-verify: true
-  sni: germanyafterpool.fun
+  sni: ganlanc.at
   tls: false
   type: hysteria2
 - name: 中国 002
@@ -2614,14 +2654,14 @@ proxies:
   type: vless
   udp: true
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: 'Channel : @Daily_Configs'
+- name: 🩵+@Azarakhsh_Proxy+🩷
   obfs: salamander
-  obfs-password: HATATEAYA
-  password: HATATEAYA
-  port: 8964
-  server: 77.90.15.183
+  obfs-password: KevinZakarian
+  password: KevinZakarian
+  port: 8443
+  server: 179.61.132.96
   skip-cert-verify: true
-  sni: ganlanc.at
+  sni: 179.61.132.96
   tls: false
   type: hysteria2
 - name: 中国 003
@@ -2658,14 +2698,12 @@ proxies:
   type: vless
   udp: true
   uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-- name: 🩵+@Azarakhsh_Proxy+🩷
-  obfs: salamander
-  obfs-password: KevinZakarian
-  password: KevinZakarian
-  port: 8443
-  server: 179.61.132.96
-  skip-cert-verify: true
-  sni: 179.61.132.96
+- name: '@v2ray313 کانالمون 😀'
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  port: 26503
+  server: ir.config7x.site
+  skip-cert-verify: false
+  sni: hy.config7x.site
   tls: false
   type: hysteria2
 - name: 美国 049
@@ -2696,12 +2734,14 @@ proxies:
   type: vless
   udp: true
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-- name: '@v2ray313 کانالمون 😀'
-  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
-  port: 26503
-  server: ir.config7x.site
-  skip-cert-verify: false
-  sni: hy.config7x.site
+- name: Telegram@vpnjey
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+  password: Telegram-vpnjey
+  port: 36264
+  server: 179.61.138.145
+  skip-cert-verify: true
+  sni: de2.jey.cc.cd
   tls: false
   type: hysteria2
 - name: 美国 050
@@ -2739,11 +2779,11 @@ proxies:
   type: vless
   udp: true
   uuid: efd11a89-7506-44ce-95b6-6654859f155b
-- name: Telegram@vpnjey
+- name: 'Telegram@vpnjey #1'
   obfs: salamander
   obfs-password: Telegram@vpnjey
-  password: Telegram-vpnjey
-  port: 36264
+  password: Telegram
+  port: 443
   server: 179.61.138.145
   skip-cert-verify: true
   sni: de2.jey.cc.cd
@@ -2783,11 +2823,11 @@ proxies:
   type: vless
   udp: true
   uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- name: 'Telegram@vpnjey #1'
+- name: 'Telegram@vpnjey #2'
   obfs: salamander
   obfs-password: Telegram@vpnjey
-  password: Telegram
-  port: 443
+  password: VPNJEY
+  port: 36264
   server: 179.61.138.145
   skip-cert-verify: true
   sni: de2.jey.cc.cd
@@ -2828,10 +2868,10 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: 'Telegram@vpnjey #2'
+- name: 'Telegram@vpnjey #3'
   obfs: salamander
   obfs-password: Telegram@vpnjey
-  password: VPNJEY
+  password: VPNJEy
   port: 36264
   server: 179.61.138.145
   skip-cert-verify: true
@@ -2871,12 +2911,12 @@ proxies:
   type: vless
   udp: true
   uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- name: 'Telegram@vpnjey #3'
+- name: 'Telegram@vpnjey #4'
   obfs: salamander
   obfs-password: Telegram@vpnjey
   password: VPNJEy
-  port: 36264
-  server: 179.61.138.145
+  port: 5707
+  server: 2a0f:5707:aaf1:11a6::1
   skip-cert-verify: true
   sni: de2.jey.cc.cd
   tls: false
@@ -2915,12 +2955,12 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: 'Telegram@vpnjey #4'
+- name: 'Telegram@vpnjey #5'
   obfs: salamander
   obfs-password: Telegram@vpnjey
-  password: VPNJEy
-  port: 5707
-  server: 2a0f:5707:aaf1:11a6::1
+  password: VPNJey
+  port: 36264
+  server: 179.61.138.145
   skip-cert-verify: true
   sni: de2.jey.cc.cd
   tls: false
@@ -2953,12 +2993,12 @@ proxies:
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 'Telegram@vpnjey #5'
+- name: 'Telegram@vpnjey #6'
   obfs: salamander
   obfs-password: Telegram@vpnjey
   password: VPNJey
-  port: 36264
-  server: 179.61.138.145
+  port: 5707
+  server: 2a0f:5707:aaf1:11a6::1
   skip-cert-verify: true
   sni: de2.jey.cc.cd
   tls: false
@@ -2991,14 +3031,12 @@ proxies:
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 'Telegram@vpnjey #6'
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-  password: VPNJey
-  port: 5707
-  server: 2a0f:5707:aaf1:11a6::1
+- name: '@OutlineReleasedKey #4'
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  port: 4444
+  server: 179.254.191.251
   skip-cert-verify: true
-  sni: de2.jey.cc.cd
+  sni: bl1.nexfile.net
   tls: false
   type: hysteria2
 - name: 其他 019
@@ -3029,11 +3067,13 @@ proxies:
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: '@OutlineReleasedKey #4'
+- name: '@OutlineReleasedKey #5'
+  obfs: ''
+  obfs-password: ''
   password: a35c508f-4d5d-4531-842e-6e9d43c762c0
   port: 4444
-  server: 179.254.191.251
-  skip-cert-verify: true
+  server: bl1.nexfile.net
+  skip-cert-verify: false
   sni: bl1.nexfile.net
   tls: false
   type: hysteria2
@@ -3063,14 +3103,14 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- name: '@OutlineReleasedKey #5'
-  obfs: ''
-  obfs-password: ''
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  port: 4444
-  server: bl1.nexfile.net
-  skip-cert-verify: false
-  sni: bl1.nexfile.net
+- name: '@KAFING_2'
+  obfs: salamander
+  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
+  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+  port: 35000
+  server: 181.214.99.162
+  skip-cert-verify: true
+  sni: api.kermanshahi.org
   tls: false
   type: hysteria2
 - name: 其他 021
@@ -3099,12 +3139,12 @@ proxies:
   skip-cert-verify: true
   sni: …
   type: hysteria2
-- name: '@KAFING_2'
+- name: '@KAFING_2 #2'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
   port: 35000
-  server: 181.214.99.162
+  server: 5.175.249.174
   skip-cert-verify: true
   sni: api.kermanshahi.org
   tls: false
@@ -3138,14 +3178,11 @@ proxies:
   server: 84.247.155.196
   type: ss
   udp: true
-- name: '@KAFING_2 #2'
-  obfs: salamander
-  obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
-  port: 35000
-  server: 5.175.249.174
-  skip-cert-verify: true
-  sni: api.kermanshahi.org
+- name: '@OutlineReleasedKey #6'
+  password: ca60984f-b1f0-4073-bd33-4c75168f749a
+  port: 443
+  server: 45.137.201.211
+  sni: wwe.fantoff.online
   tls: false
   type: hysteria2
 - name: 其他 023
@@ -3177,11 +3214,14 @@ proxies:
   server: 68.183.227.236
   type: ss
   udp: true
-- name: '@OutlineReleasedKey #6'
-  password: ca60984f-b1f0-4073-bd33-4c75168f749a
+- name: 📗5@oneclickvpnkeys
+  obfs: salamander
+  obfs-password: HVD1C0uyo38mMz8B
+  password: capadmae6e0190
   port: 443
-  server: 45.137.201.211
-  sni: wwe.fantoff.online
+  server: 51.15.16.68
+  skip-cert-verify: true
+  sni: vpn.local
   tls: false
   type: hysteria2
 - name: 其他 024
@@ -3213,14 +3253,14 @@ proxies:
   server: 156.146.38.167
   type: ss
   udp: true
-- name: 📗5@oneclickvpnkeys
+- name: '@v2ray_phoenix'
   obfs: salamander
-  obfs-password: HVD1C0uyo38mMz8B
-  password: capadmae6e0190
-  port: 443
-  server: 51.15.16.68
-  skip-cert-verify: true
-  sni: vpn.local
+  obfs-password: km9oqmefh2km1i5n
+  password: d1gkicdgem3bsoaa
+  port: 43345
+  server: panel.autonetshop.ir
+  skip-cert-verify: false
+  sni: panel.autonetshop.ir
   tls: false
   type: hysteria2
 - name: 其他 025
@@ -3250,14 +3290,14 @@ proxies:
   server: 37.19.198.236
   type: ss
   udp: true
-- name: '@v2ray_phoenix'
+- name: '@meliproxyy #1'
   obfs: salamander
-  obfs-password: km9oqmefh2km1i5n
-  password: d1gkicdgem3bsoaa
-  port: 43345
-  server: panel.autonetshop.ir
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  port: 5010
+  server: 152.32.254.68
   skip-cert-verify: false
-  sni: panel.autonetshop.ir
+  sni: nas.aizhzo.com
   tls: false
   type: hysteria2
 - name: 其他 026
@@ -3286,14 +3326,11 @@ proxies:
   server: 137.184.174.93
   type: ss
   udp: true
-- name: '@meliproxyy #1'
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  port: 5010
-  server: 152.32.254.68
-  skip-cert-verify: false
-  sni: nas.aizhzo.com
+- name: '@OutlineReleasedKey #7'
+  password: fa937345-6d3e-4ff4-8127-1a836987a0db
+  port: 10444
+  server: 195.63.128.21
+  sni: germany.cloudhouse1.ru
   tls: false
   type: hysteria2
 - name: 其他 027
@@ -3325,9 +3362,9 @@ proxies:
   server: 193.151.160.9
   type: ss
   udp: true
-- name: '@OutlineReleasedKey #7'
+- name: '@OutlineReleasedKey #8'
   password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 10444
+  port: 5443
   server: 195.63.128.21
   sni: germany.cloudhouse1.ru
   tls: false
@@ -3364,11 +3401,11 @@ proxies:
   server: 102.37.156.224
   type: ss
   udp: true
-- name: '@OutlineReleasedKey #8'
+- name: '@OutlineReleasedKey #9'
   password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 5443
-  server: 195.63.128.21
-  sni: germany.cloudhouse1.ru
+  port: 10444
+  server: 195.63.138.212
+  sni: cloudehouse24.ru
   tls: false
   type: hysteria2
 - name: 其他 029
@@ -3400,11 +3437,12 @@ proxies:
   server: 82.38.31.11
   type: ss
   udp: true
-- name: '@OutlineReleasedKey #9'
-  password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  port: 10444
-  server: 195.63.138.212
-  sni: cloudehouse24.ru
+- name: ⚙️73@oneclickvpnkeys
+  password: fce629d692a7b1ad71a17dae29d8b3c6
+  port: 8443
+  server: 172.87.24.53
+  skip-cert-verify: true
+  sni: hy2k2p.local
   tls: false
   type: hysteria2
 - name: 其他 030
@@ -5110,49 +5148,6 @@ proxies:
   sni: csharp.protocolbuffer.com
   skip-cert-verify: true
   udp: true
-- name: trojan-1929965354
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.114.45
-  skip-cert-verify: false
-  sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1559...
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 51.222.141.125
-  type: ss
-- name: 美国 078
-  type: vmess
-  network: ws
-  server: 172.64.166.20
-  port: 2082
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  skip-cert-verify: true
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- name: MO 4 → tg@nicevpn123
-  server: macau.hapchung.com
-  port: 10443
-  type: trojan
-  password: 5eb5bdf9-4a70-4890-b2ca-8b2b79792639
-  skip-cert-verify: true
-  udp: true
-- name: trojan-1929965361
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.238.80.100
-  skip-cert-verify: false
-  sni: connectwithtopemployersandfindidealjobs.com
-  type: trojan
-  udp: true
 proxy-groups:
 - name: AUTO
   type: url-test
@@ -5161,35 +5156,39 @@ proxy-groups:
   tolerance: 50
   proxies:
   - nl|e1f5|puddincat07@Telegram
-  - 🇺🇸 United States [TG]
+  - 🇺🇸 United States [GH:SoliSpirit/v2ray-configs]
   - SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   - 🇨🇳_CN_中国_IPV4
   - 日本 001
   - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - 🇳🇱[www.v2nodes.com] ss-NL-1564...
   - AF 1 → tg@nicevpn123
   - nl|b8af|puddincat07@Telegram
-  - 🇺🇸 United States/Seattle [TG]
+  - '🇺🇸 United States/New York [GH:SoliSpirit/v2ray-configs] #2'
   - VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   - 🇺🇸_US_美国_IPV4
   - 美国 012
   - 🇺🇸_US_美国_IPV4 (12)
+  - 日本|@ripaojiedian
   - AL 1 → tg@nicevpn123
   - nl|f92b|puddincat07@Telegram
-  - 🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf]
+  - 🇺🇸 United States/Hillsboro [TG]
   - VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
   - 美国 013
+  - 越南|@ripaojiedian
   - AL 2 → tg@nicevpn123
   - nl|2d27|puddincat07@Telegram
-  - '🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf] #2'
+  - 🇩🇪 Germany/Frankfurt am Main [GH:MatinGhanbari/v2ray-conf]
   - SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
   - 荷兰 005
+  - 🇩🇪DE_3|3.9MB/s
   - AO 1 → tg@nicevpn123
   - nl|8e6f|puddincat07@Telegram
-  - 🇸🇬 Singapore [TG]
   - SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   - 美国 014
   - AO 2 → tg@nicevpn123
   - nl|bc46|puddincat07@Telegram
+  - 🇳🇱 The Netherlands/Amsterdam [TG]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   - 美国 015
   - AR 1 → tg@nicevpn123
@@ -5199,17 +5198,19 @@ proxy-groups:
   - 美国 016
   - AR 2 → tg@nicevpn123
   - nl|1cc0|puddincat07@Telegram
-  - '🇺🇸 United States/Atlanta [TG] #2'
+  - 🇦🇪 United Arab Emirates [TG]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
   - 🇺🇸_US_美国_IPV4 (3)
   - 美国 017
   - AR 3 → tg@nicevpn123
   - nl|468f|puddincat07@Telegram
+  - 🇳🇱 The Netherlands/Amsterdam [GH:MatinGhanbari/v2ray-conf]
   - SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   - 🇸🇬_SG_新加坡->🇳🇬_NG_尼日利亚_IPV4
   - 美国 018
   - AR 4 → tg@nicevpn123
   - nl|5013|puddincat07@Telegram
+  - 🇮🇪 Ireland/Dublin [GH:SoliSpirit/v2ray-configs]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   - 🇷🇺_RU_俄罗斯_IPV4
   - 法国 001
@@ -5591,11 +5592,6 @@ proxy-groups:
   - 🇦🇹[www.v2nodes.com] ss-AT-1614...
   - 美国 077
   - MO 3 → tg@nicevpn123
-  - trojan-1929965354
-  - 🇨🇦[www.v2nodes.com] ss-CA-1559...
-  - 美国 078
-  - MO 4 → tg@nicevpn123
-  - trojan-1929965361
 - name: AUTO-HY2
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -5609,15 +5605,14 @@ proxy-groups:
   - hysteria2-1939845046
   - 🇫🇷_FR_法国_IPV6 (2)
   - hysteria2-1828371657
+  - 🇳🇱 The Netherlands/Amsterdam [GH:Surfboardv2ray/TGParse]
   - 🇫🇷_FR_法国_IPV6 (3)
   - hysteria2-1828371633
-  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   - 🇫🇷_FR_法国_IPV6 (4)
   - hysteria2-1832765000
-  - 🇺🇸 United States [GH:barry-far/V2ray-config]
+  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   - hysteria2-1828529280
   - hysteria2-1832764816
-  - '🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse] #2'
   - hysteria2-1827145886
   - hysteria2-1854030876
   - hysteria2-1828372350
@@ -5628,7 +5623,6 @@ proxy-groups:
   - 🇯🇵 20@exclavevpn
   - 🇺🇸139909 | ⚡️Telegram = t.me/S...
   - hysteria2-1828528935
-  - '@OutlineReleasedKey'
   - '@OutlineReleasedKey #2'
   - Telegram  ⚜️Join -> @tik7net_v...
   - '@B2Hub'
@@ -5647,10 +5641,10 @@ proxy-groups:
   - 'Telegram@vpnjey #5'
   - 'Telegram@vpnjey #6'
   - '@OutlineReleasedKey #4'
-  - hysteria2-1832881372
   - '@OutlineReleasedKey #5'
-  - hysteria2-1930264641
+  - hysteria2-1832881372
   - '@KAFING_2'
+  - hysteria2-1930264641
   - '@KAFING_2 #2'
   - '@OutlineReleasedKey #6'
   - 📗5@oneclickvpnkeys
@@ -5659,6 +5653,7 @@ proxy-groups:
   - '@OutlineReleasedKey #7'
   - '@OutlineReleasedKey #8'
   - '@OutlineReleasedKey #9'
+  - ⚙️73@oneclickvpnkeys
   - '@confiig_hub #1'
   - 'Telegram@vpnjey #7'
   - 'Telegram@vpnjey #8'
@@ -5674,71 +5669,76 @@ proxy-groups:
   - DIRECT
   - nl|e1f5|puddincat07@Telegram
   - hysteria2-1880873612
-  - 🇺🇸 United States [TG]
+  - 🇺🇸 United States [GH:SoliSpirit/v2ray-configs]
   - SS-加拿大>英国-NF解锁英国地区非自制剧-ChatGPT-144.217.164.29:12000
   - 🇨🇳_CN_中国_IPV4
   - 日本 001
   - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - 🇳🇱[www.v2nodes.com] ss-NL-1564...
   - AF 1 → tg@nicevpn123
   - nl|b8af|puddincat07@Telegram
   - hysteria2-1853341683
-  - 🇺🇸 United States/Seattle [TG]
+  - '🇺🇸 United States/New York [GH:SoliSpirit/v2ray-configs] #2'
   - VMESS-未知>德国-NF解锁印度地区非自制剧-ChatGPT-TikTok-YouTube-547.rtxconfigz.shop:8080
   - 🇺🇸_US_美国_IPV4
   - 美国 012
   - 🇺🇸_US_美国_IPV4 (12)
+  - 日本|@ripaojiedian
   - AL 1 → tg@nicevpn123
   - nl|f92b|puddincat07@Telegram
   - hysteria2-1855771838
-  - 🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf]
+  - 🇺🇸 United States/Hillsboro [TG]
   - VMESS-美国>日本-NF解锁日本地区非自制剧-ChatGPT-YouTube-t1.620720.xyz:8443
   - 🇫🇷_FR_法国_IPV6
   - 美国 013
+  - 越南|@ripaojiedian
   - AL 2 → tg@nicevpn123
   - nl|2d27|puddincat07@Telegram
   - hysteria2-1939845046
-  - '🇺🇸 United States/San Francisco [GH:MatinGhanbari/v2ray-conf] #2'
+  - 🇩🇪 Germany/Frankfurt am Main [GH:MatinGhanbari/v2ray-conf]
   - SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990
   - 🇫🇷_FR_法国_IPV6 (2)
   - 荷兰 005
+  - 🇩🇪DE_3|3.9MB/s
   - AO 1 → tg@nicevpn123
   - nl|8e6f|puddincat07@Telegram
   - hysteria2-1828371657
-  - 🇸🇬 Singapore [TG]
+  - 🇳🇱 The Netherlands/Amsterdam [GH:Surfboardv2ray/TGParse]
   - SS-英国-NF解锁自制剧-ChatGPT-TikTok-146.19.49.251:443
   - 🇫🇷_FR_法国_IPV6 (3)
   - 美国 014
   - AO 2 → tg@nicevpn123
   - nl|bc46|puddincat07@Telegram
   - hysteria2-1828371633
-  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
+  - 🇳🇱 The Netherlands/Amsterdam [TG]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-15.235.41.200:80
   - 🇫🇷_FR_法国_IPV6 (4)
   - 美国 015
   - AR 1 → tg@nicevpn123
   - nl|6a01|puddincat07@Telegram
   - hysteria2-1832765000
-  - 🇺🇸 United States [GH:barry-far/V2ray-config]
+  - 🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse]
   - SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443
   - 🇺🇸_US_美国_IPV4 (2)
   - 美国 016
   - AR 2 → tg@nicevpn123
   - nl|1cc0|puddincat07@Telegram
   - hysteria2-1828529280
-  - '🇺🇸 United States/Atlanta [TG] #2'
+  - 🇦🇪 United Arab Emirates [TG]
   - VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.92.10.226:45979
   - 🇺🇸_US_美国_IPV4 (3)
   - 美国 017
   - AR 3 → tg@nicevpn123
   - nl|468f|puddincat07@Telegram
   - hysteria2-1832764816
-  - '🇺🇸 United States/Los Angeles [GH:Surfboardv2ray/TGParse] #2'
+  - 🇳🇱 The Netherlands/Amsterdam [GH:MatinGhanbari/v2ray-conf]
   - SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990
   - 🇸🇬_SG_新加坡->🇳🇬_NG_尼日利亚_IPV4
   - 美国 018
   - AR 4 → tg@nicevpn123
   - nl|5013|puddincat07@Telegram
   - hysteria2-1827145886
+  - 🇮🇪 Ireland/Dublin [GH:SoliSpirit/v2ray-configs]
   - VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   - 🇷🇺_RU_俄罗斯_IPV4
   - 法国 001
@@ -5896,119 +5896,119 @@ proxy-groups:
   - 美国 043
   - EC 1 → tg@nicevpn123
   - hysteria2-1828528935
-  - '@OutlineReleasedKey'
+  - '@OutlineReleasedKey #2'
   - 美国 044
   - FI 1 → tg@nicevpn123
   - shadowsocks-1827146287
-  - '@OutlineReleasedKey #2'
+  - Telegram  ⚜️Join -> @tik7net_v...
   - 美国 045
   - FI 2 → tg@nicevpn123
   - shadowsocks-1827146197
-  - Telegram  ⚜️Join -> @tik7net_v...
+  - '@B2Hub'
   - 罗马尼亚 001
   - IE 1 → tg@nicevpn123
   - shadowsocks-1827146224
-  - '@B2Hub'
+  - Telegram:@v2rayng3
   - 美国 046
   - IE 10 → tg@nicevpn123
   - shadowsocks-1827146248
-  - Telegram:@v2rayng3
+  - ⚙️61@oneclickvpnkeys
   - 美国 047
   - IE 11 → tg@nicevpn123
   - shadowsocks-1875023013
-  - ⚙️61@oneclickvpnkeys
+  - 🇸🇬214601 | ⚡️Telegram = t.me/v...
   - 其他 014
   - IE 2 → tg@nicevpn123
   - shadowsocks-1830344687
-  - 🇸🇬214601 | ⚡️Telegram = t.me/v...
+  - ⚙️64@oneclickvpnkeys
   - 美国 048
   - IE 3 → tg@nicevpn123
   - trojan-1932509804
-  - ⚙️64@oneclickvpnkeys
+  - 'Channel : @Daily_Configs'
   - 中国 002
   - IE 4 → tg@nicevpn123
   - vless-1827151410
-  - 'Channel : @Daily_Configs'
+  - 🩵+@Azarakhsh_Proxy+🩷
   - 中国 003
   - IE 5 → tg@nicevpn123
   - vless-1931998094
-  - 🩵+@Azarakhsh_Proxy+🩷
+  - '@v2ray313 کانالمون 😀'
   - 美国 049
   - IE 6 → tg@nicevpn123
   - vless-1943482613
-  - '@v2ray313 کانالمون 😀'
+  - Telegram@vpnjey
   - 美国 050
   - IE 7 → tg@nicevpn123
   - vless-1929914559
-  - Telegram@vpnjey
+  - 'Telegram@vpnjey #1'
   - 美国 051
   - IE 8 → tg@nicevpn123
   - vless-1832754815
-  - 'Telegram@vpnjey #1'
+  - 'Telegram@vpnjey #2'
   - 美国 052
   - IE 9 → tg@nicevpn123
   - vless-1883568710
-  - 'Telegram@vpnjey #2'
+  - 'Telegram@vpnjey #3'
   - 乌克兰 001
   - IL 1 → tg@nicevpn123
   - vless-1898602719
-  - 'Telegram@vpnjey #3'
+  - 'Telegram@vpnjey #4'
   - 美国 053
   - IL 2 → tg@nicevpn123
   - vless-1851981829
-  - 'Telegram@vpnjey #4'
+  - 'Telegram@vpnjey #5'
   - 其他 017
   - IL 3 → tg@nicevpn123
   - vmess-1827158757
-  - 'Telegram@vpnjey #5'
+  - 'Telegram@vpnjey #6'
   - 其他 018
   - IM 1 → tg@nicevpn123
   - vmess-1853348260
-  - 'Telegram@vpnjey #6'
+  - '@OutlineReleasedKey #4'
   - 其他 019
   - IM 2 → tg@nicevpn123
   - vmess-1828338235
-  - '@OutlineReleasedKey #4'
+  - '@OutlineReleasedKey #5'
   - 其他 020
   - IM 3 → tg@nicevpn123
   - hysteria2-1832881372
-  - '@OutlineReleasedKey #5'
+  - '@KAFING_2'
   - 其他 021
   - IR 1 → tg@nicevpn123
   - hysteria2-1930264641
-  - '@KAFING_2'
+  - '@KAFING_2 #2'
   - 其他 022
   - IR 10 → tg@nicevpn123
   - shadowsocks-1827146336
-  - '@KAFING_2 #2'
+  - '@OutlineReleasedKey #6'
   - 其他 023
   - IR 11 → tg@nicevpn123
   - shadowsocks-1828226964
-  - '@OutlineReleasedKey #6'
+  - 📗5@oneclickvpnkeys
   - 其他 024
   - IR 2 → tg@nicevpn123
   - shadowsocks-1827146556
-  - 📗5@oneclickvpnkeys
+  - '@v2ray_phoenix'
   - 其他 025
   - IR 3 → tg@nicevpn123
   - shadowsocks-1827146122
-  - '@v2ray_phoenix'
+  - '@meliproxyy #1'
   - 其他 026
   - IR 4 → tg@nicevpn123
   - shadowsocks-1827147479
-  - '@meliproxyy #1'
+  - '@OutlineReleasedKey #7'
   - 其他 027
   - IR 6 → tg@nicevpn123
   - shadowsocks-1875022941
-  - '@OutlineReleasedKey #7'
+  - '@OutlineReleasedKey #8'
   - 其他 028
   - IR 7 → tg@nicevpn123
   - shadowsocks-1827146619
-  - '@OutlineReleasedKey #8'
+  - '@OutlineReleasedKey #9'
   - 其他 029
   - IR 9 → tg@nicevpn123
   - shadowsocks-1827145971
-  - '@OutlineReleasedKey #9'
+  - ⚙️73@oneclickvpnkeys
   - 其他 030
   - IT 1 → tg@nicevpn123
   - trojan-1827149654
@@ -6167,11 +6167,6 @@ proxy-groups:
   - 🇦🇹[www.v2nodes.com] ss-AT-1614...
   - 美国 077
   - MO 3 → tg@nicevpn123
-  - trojan-1929965354
-  - 🇨🇦[www.v2nodes.com] ss-CA-1559...
-  - 美国 078
-  - MO 4 → tg@nicevpn123
-  - trojan-1929965361
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
