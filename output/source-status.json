@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T05:31:06.124298+00:00",
+  "generated_at": "2026-11-24T16:25:45.252003+00:00",
   "proxy_count": 500,
   "max_nodes": 500,
   "mode": "interleave",
@@ -7,14 +7,14 @@
   "kept_per_source": {
     "PuddinCat/BestClash": 16,
     "Au1rxx/free-vpn-subscriptions": 560,
-    "awesome-vpn/awesome-vpn": 10,
+    "awesome-vpn/awesome-vpn": 19,
     "vxiaov/free_proxies": 28,
-    "ermaozi/get_subscribe": 339,
-    "anaer/Sub": 2043,
-    "ermaozi01/free_clash_vpn": 0,
+    "ermaozi/get_subscribe": 267,
+    "anaer/Sub": 2052,
+    "ermaozi01/free_clash_vpn": 21,
     "peasoft/NoMoreWalls": 0,
     "NiceVPN123/NiceVPN": 3130,
-    "chengaopan/AutoMergePublicNodes": 1
+    "chengaopan/AutoMergePublicNodes": 2
   },
   "sources": [
     {
@@ -35,8 +35,8 @@
       "name": "awesome-vpn/awesome-vpn",
       "url": "https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml",
       "ok": true,
-      "received": 28,
-      "kept": 10
+      "received": 35,
+      "kept": 19
     },
     {
       "name": "vxiaov/free_proxies",
@@ -49,22 +49,22 @@
       "name": "ermaozi/get_subscribe",
       "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
       "ok": true,
-      "received": 391,
-      "kept": 339
+      "received": 322,
+      "kept": 267
     },
     {
       "name": "anaer/Sub",
       "url": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
       "ok": true,
       "received": 2144,
-      "kept": 2043
+      "kept": 2052
     },
     {
       "name": "ermaozi01/free_clash_vpn",
       "url": "https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml",
       "ok": true,
       "received": 30,
-      "kept": 0
+      "kept": 21
     },
     {
       "name": "peasoft/NoMoreWalls",
@@ -84,8 +84,8 @@
       "name": "chengaopan/AutoMergePublicNodes",
       "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml",
       "ok": true,
-      "received": 101,
-      "kept": 1
+      "received": 105,
+      "kept": 2
     }
   ]
 }
